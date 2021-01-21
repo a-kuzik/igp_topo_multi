@@ -26,16 +26,19 @@ Following commands outputs are possible for parsing:
 Nokia:
 
 ```show router isis database detail```
+
 ```show router ospf database type router detail```
 
 Juniper:
 
 ```show isis database extensive```
+
 ```show ospf database router detail```
 
 Cisco:
 
 ```show isis database detail```
+
 ```show ip ospf database router```
 
 Huawei:
