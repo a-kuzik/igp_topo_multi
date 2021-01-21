@@ -1,0 +1,15 @@
+Value Filldown Source (\S+)
+Value Filldown Hostname (\S+)
+Value Filldown Area (\S+)
+Value Required Nbr (\S+)
+Value Required Metric (\d+)
+Value Fillup RID ((\d+\.){3}\d+)
+
+Start
+  ^\s+SOURCE\s+${Source} -> Continue.Record
+  ^\s+HOST\s+NAME\s+${Hostname} -> Continue.Record
+  ^\s+AREA\s+ADDR\s+${Area} -> Continue.Record
+  ^\S+NBR\s+ID\s+${Nbr}\s+COST:\s+${Metric} -> Continue.Record
+  ^\s+Router\s+ID\s+${RID} -> Continue.Record
+  
+  

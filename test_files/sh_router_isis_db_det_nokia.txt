@@ -1,0 +1,350 @@
+*A:DR14# show router isis database detail 
+
+===============================================================================
+Rtr Base ISIS Instance 0 Database (detail)
+===============================================================================
+
+Displaying Level 1 database
+-------------------------------------------------------------------------------
+LSP ID    : MX480-2_5-Core_stand-AR11.00-00             Level     : L1 
+Sequence  : 0x2ee7                 Checksum  : 0x4821   Lifetime  : 615
+Version   : 1                      Pkt Type  : 18       Pkt Ver   : 1
+Attributes: L1                     Max Area  : 0        Alloc Len : 285
+SYS ID    : 0100.0000.0001         SysID Len : 6        Used Len  : 285
+ 
+TLVs : 
+  Area Addresses:
+    Area Address : (3) 49.0001
+  Unknown TLV   : 14 Len 2    :
+    05 D4 
+  Supp Protocols:
+    Protocols     : IPv4
+    Protocols     : IPv6
+  Router ID   :
+    Router ID   : 10.0.0.1
+  I/F Addresses :
+    I/F Address   : 10.0.0.1
+  IS-Hostname   : MX480-2_5-Core_stand-AR11
+  TE IS Nbrs   :
+    Nbr   : DR13.00                             
+    Default Metric  : 10
+    Sub TLV Len     : 74
+    IF Addr   : 10.1.5.1
+    Nbr IP    : 10.1.5.5
+    LclId    : 1209
+    RmtId    : 2
+    Unresvd BW: 
+        BW[0] : 10000000 kbps
+        BW[1] : 10000000 kbps
+        BW[2] : 10000000 kbps
+        BW[3] : 10000000 kbps
+        BW[4] : 10000000 kbps
+        BW[5] : 10000000 kbps
+        BW[6] : 10000000 kbps
+        BW[7] : 10000000 kbps
+    Resvble BW: 10000000 kbps
+    MaxLink BW: 10000000 kbps         
+    Admin Grp : 0x0
+    Nbr   : DR14.00                             
+    Default Metric  : 10
+    Sub TLV Len     : 74
+    IF Addr   : 10.1.6.1
+    Nbr IP    : 10.1.6.6
+    LclId    : 1400
+    RmtId    : 2
+    Unresvd BW: 
+        BW[0] : 10000000 kbps
+        BW[1] : 10000000 kbps
+        BW[2] : 10000000 kbps
+        BW[3] : 10000000 kbps
+        BW[4] : 10000000 kbps
+        BW[5] : 10000000 kbps
+        BW[6] : 10000000 kbps
+        BW[7] : 10000000 kbps
+    Resvble BW: 10000000 kbps
+    MaxLink BW: 10000000 kbps
+    Admin Grp : 0x0
+  TE IP Reach   :
+    Default Metric  : 0
+    Control Info:    , prefLen 32
+    Prefix   : 10.0.0.1
+    Default Metric  : 0
+    Control Info:    , prefLen 32
+    Prefix   : 10.0.1.1
+  I/F Addresses :
+    I/F Address   : 10.0.1.1
+  Router Cap : 10.0.0.1, D:0, S:0
+
+-------------------------------------------------------------------------------
+LSP ID    : AR12.00-00                                  Level     : L1 
+Sequence  : 0x1bf8                 Checksum  : 0x6f8e   Lifetime  : 663
+Version   : 1                      Pkt Type  : 18       Pkt Ver   : 1
+Attributes: L1                     Max Area  : 3        Alloc Len : 139
+SYS ID    : 0100.0000.0002         SysID Len : 6        Used Len  : 139
+ 
+TLVs : 
+  Area Addresses:
+    Area Address : (3) 49.0001
+  Supp Protocols:
+    Protocols     : IPv4
+  IS-Hostname   : AR12
+  Router ID   :                       
+    Router ID   : 10.0.0.2
+  I/F Addresses :
+    I/F Address   : 10.0.0.2
+    I/F Address   : 10.2.5.2
+    I/F Address   : 10.2.6.2
+  TE IS Nbrs   :
+    Nbr   : DR14.00                             
+    Default Metric  : 10
+    Sub TLV Len     : 12
+    IF Addr   : 10.2.6.2
+    Nbr IP    : 10.2.6.6
+  TE IS Nbrs   :
+    Nbr   : DR13.00                             
+    Default Metric  : 10
+    Sub TLV Len     : 12
+    IF Addr   : 10.2.5.2
+    Nbr IP    : 10.2.5.5
+  TE IP Reach   :
+    Default Metric  : 0
+    Control Info:    , prefLen 32
+    Prefix   : 10.0.0.2
+    Default Metric  : 10
+    Control Info:    , prefLen 24
+    Prefix   : 10.2.5.0
+    Default Metric  : 10
+    Control Info:    , prefLen 24
+    Prefix   : 10.2.6.0
+
+-------------------------------------------------------------------------------
+LSP ID    : DR13.00-00                                  Level     : L1 
+Sequence  : 0x2f48                 Checksum  : 0x6e90   Lifetime  : 1098
+Version   : 1                      Pkt Type  : 18       Pkt Ver   : 1
+Attributes: L1                     Max Area  : 3        Alloc Len : 360
+SYS ID    : 0100.0000.1005         SysID Len : 6        Used Len  : 360
+ 
+TLVs : 
+  Area Addresses:
+    Area Address : (3) 49.0001
+  Supp Protocols:
+    Protocols     : IPv4
+  IS-Hostname   : DR13
+  Router ID   :
+    Router ID   : 10.0.1.5
+  I/F Addresses :
+    I/F Address   : 10.0.0.5          
+    I/F Address   : 10.0.1.5
+    I/F Address   : 10.1.5.5
+    I/F Address   : 10.2.5.5
+    I/F Address   : 10.5.6.5
+  TE IS Nbrs   :
+    Nbr   : DR14.00                             
+    Default Metric  : 10
+    Sub TLV Len     : 69
+    IF Addr   : 10.5.6.5
+    Nbr IP    : 10.5.6.6
+    MaxLink BW: 199999995 kbps
+    Resvble BW: 199999995 kbps
+    Unresvd BW: 
+        BW[0] : 199999995 kbps
+        BW[1] : 199999995 kbps
+        BW[2] : 199999995 kbps
+        BW[3] : 199999995 kbps
+        BW[4] : 199999995 kbps
+        BW[5] : 199999995 kbps
+        BW[6] : 199999995 kbps
+        BW[7] : 199999995 kbps
+    Admin Grp : 0x0
+    TE Metric : 10
+  TE IS Nbrs   :
+    Nbr   : AR12.00                             
+    Default Metric  : 10
+    Sub TLV Len     : 69
+    IF Addr   : 10.2.5.5
+    Nbr IP    : 10.2.5.2
+    MaxLink BW: 10000000 kbps
+    Resvble BW: 10000000 kbps
+    Unresvd BW: 
+        BW[0] : 10000000 kbps
+        BW[1] : 10000000 kbps
+        BW[2] : 10000000 kbps
+        BW[3] : 10000000 kbps
+        BW[4] : 10000000 kbps
+        BW[5] : 10000000 kbps
+        BW[6] : 10000000 kbps
+        BW[7] : 10000000 kbps
+    Admin Grp : 0x0
+    TE Metric : 10
+  TE IS Nbrs   :
+    Nbr   : MX480-2_5-Core_stand-AR11.00        
+    Default Metric  : 10              
+    Sub TLV Len     : 69
+    IF Addr   : 10.1.5.5
+    Nbr IP    : 10.1.5.1
+    MaxLink BW: 10000000 kbps
+    Resvble BW: 10000000 kbps
+    Unresvd BW: 
+        BW[0] : 10000000 kbps
+        BW[1] : 10000000 kbps
+        BW[2] : 10000000 kbps
+        BW[3] : 10000000 kbps
+        BW[4] : 10000000 kbps
+        BW[5] : 10000000 kbps
+        BW[6] : 10000000 kbps
+        BW[7] : 10000000 kbps
+    Admin Grp : 0x0
+    TE Metric : 10
+  TE IP Reach   :
+    Default Metric  : 0
+    Control Info:    , prefLen 32
+    Prefix   : 10.0.0.5
+    Default Metric  : 0
+    Control Info:    , prefLen 32
+    Prefix   : 10.0.1.5
+    Default Metric  : 10
+    Control Info:    , prefLen 24
+    Prefix   : 10.1.5.0
+    Default Metric  : 10
+    Control Info:    , prefLen 24
+    Prefix   : 10.2.5.0
+    Default Metric  : 10
+    Control Info:    , prefLen 24
+    Prefix   : 10.5.6.0
+
+-------------------------------------------------------------------------------
+LSP ID    : DR14.00-00                                  Level     : L1 
+Sequence  : 0x2f35                 Checksum  : 0x591    Lifetime  : 747
+Version   : 1                      Pkt Type  : 18       Pkt Ver   : 1
+Attributes: L1                     Max Area  : 3        Alloc Len : 1492
+SYS ID    : 0100.0000.1006         SysID Len : 6        Used Len  : 372
+ 
+TLVs : 
+  Area Addresses:
+    Area Address : (3) 49.0001
+  Supp Protocols:
+    Protocols     : IPv4              
+  IS-Hostname   : DR14
+  Router ID   :
+    Router ID   : 10.0.1.6
+  I/F Addresses :
+    I/F Address   : 10.0.0.6
+    I/F Address   : 10.0.1.6
+    I/F Address   : 10.1.6.6
+    I/F Address   : 10.2.6.6
+    I/F Address   : 10.5.6.6
+    I/F Address   : 10.10.6.6
+  TE IS Nbrs   :
+    Nbr   : DR13.00                             
+    Default Metric  : 10
+    Sub TLV Len     : 69
+    IF Addr   : 10.5.6.6
+    Nbr IP    : 10.5.6.5
+    MaxLink BW: 199999995 kbps
+    Resvble BW: 199999995 kbps
+    Unresvd BW: 
+        BW[0] : 199999995 kbps
+        BW[1] : 199999995 kbps
+        BW[2] : 199999995 kbps
+        BW[3] : 199999995 kbps
+        BW[4] : 199999995 kbps
+        BW[5] : 199999995 kbps
+        BW[6] : 199999995 kbps
+        BW[7] : 199999995 kbps
+    Admin Grp : 0x0
+    TE Metric : 10
+  TE IS Nbrs   :
+    Nbr   : AR12.00                             
+    Default Metric  : 10
+    Sub TLV Len     : 69
+    IF Addr   : 10.2.6.6
+    Nbr IP    : 10.2.6.2
+    MaxLink BW: 10000000 kbps
+    Resvble BW: 10000000 kbps
+    Unresvd BW: 
+        BW[0] : 10000000 kbps
+        BW[1] : 10000000 kbps
+        BW[2] : 10000000 kbps
+        BW[3] : 10000000 kbps
+        BW[4] : 10000000 kbps
+        BW[5] : 10000000 kbps
+        BW[6] : 10000000 kbps         
+        BW[7] : 10000000 kbps
+    Admin Grp : 0x0
+    TE Metric : 10
+  TE IS Nbrs   :
+    Nbr   : MX480-2_5-Core_stand-AR11.00        
+    Default Metric  : 10
+    Sub TLV Len     : 69
+    IF Addr   : 10.1.6.6
+    Nbr IP    : 10.1.6.1
+    MaxLink BW: 10000000 kbps
+    Resvble BW: 10000000 kbps
+    Unresvd BW: 
+        BW[0] : 10000000 kbps
+        BW[1] : 10000000 kbps
+        BW[2] : 10000000 kbps
+        BW[3] : 10000000 kbps
+        BW[4] : 10000000 kbps
+        BW[5] : 10000000 kbps
+        BW[6] : 10000000 kbps
+        BW[7] : 10000000 kbps
+    Admin Grp : 0x0
+    TE Metric : 10
+  TE IP Reach   :
+    Default Metric  : 0
+    Control Info:    , prefLen 32
+    Prefix   : 10.0.0.6
+    Default Metric  : 0
+    Control Info:    , prefLen 32
+    Prefix   : 10.0.1.6
+    Default Metric  : 10
+    Control Info:    , prefLen 24
+    Prefix   : 10.1.6.0
+    Default Metric  : 10
+    Control Info:    , prefLen 24
+    Prefix   : 10.2.6.0
+    Default Metric  : 10
+    Control Info:    , prefLen 24
+    Prefix   : 10.5.6.0
+    Default Metric  : 10
+    Control Info:    , prefLen 24
+    Prefix   : 10.10.6.0
+
+Level (1) LSP Count : 4
+
+Displaying Level 2 database           
+-------------------------------------------------------------------------------
+Level (2) LSP Count : 0
+-------------------------------------------------------------------------------
+Control Info     : D = Prefix Leaked Down
+                   S = Sub-TLVs Present
+Attribute Flags  : N = Node Flag
+                   R = Re-advertisement Flag
+                   X = External Prefix Flag
+                   E = Entropy Label Capability (ELC) Flag
+Adj-SID Flags    : v4/v6 = IPv4 or IPv6 Address-Family
+                   B = Backup Flag
+                   V = Adj-SID carries a value
+                   L = value/index has local significance
+                   S = Set of Adjacencies
+                   P = Persistently allocated
+Prefix-SID Flags : R = Re-advertisement Flag
+                   N = Node-SID Flag
+                   nP = no penultimate hop POP
+                   E = Explicit-Null Flag
+                   V = Prefix-SID carries a value
+                   L = value/index has local significance
+Lbl-Binding Flags: v4/v6 = IPv4 or IPv6 Address-Family
+                   M = Mirror Context Flag
+                   S = SID/Label Binding flooding
+                   D = Prefix Leaked Down
+                   A = Attached Flag
+SABM-flags Flags:  R = RSVP-TE
+                   S = SR-TE
+                   F = LFA
+                   X = FLEX-ALGO
+FAD-flags Flags:   M = Prefix Metric
+===============================================================================
+*A:DR14#                
+

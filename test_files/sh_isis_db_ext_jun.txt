@@ -1,0 +1,1129 @@
+lab@DR1# run show isis database extensive | no-more 
+IS-IS level 1 link-state database:
+
+IS-IS level 2 link-state database:
+
+AR1.00-00 Sequence: 0x9, Checksum: 0x6021, Lifetime: 763 secs
+   IS neighbor: AR2.00                        Metric:       10
+     Two-way fragment: AR2.00-00, Two-way first fragment: AR2.00-00
+   IS neighbor: DR1.00                        Metric:       10
+     Two-way fragment: DR1.00-00, Two-way first fragment: DR1.00-00
+   IP prefix: 10.10.10.1/32                   Metric:        0 Internal Up
+   IP prefix: 172.16.25.4/30                  Metric:       10 Internal Up
+   IP prefix: 172.16.25.8/30                  Metric:       10 Internal Up
+
+  Header: LSP ID: AR1.00-00, Length: 218 bytes
+    Allocated length: 284 bytes, Router ID: 10.10.10.1
+    Remaining lifetime: 763 secs, Level: 2, Interface: 330
+    Estimated free bytes: 110, Actual free bytes: 66
+    Aging timer expires in: 763 secs
+    Protocols: IP, IPv6
+
+  Packet: LSP ID: AR1.00-00, Length: 218 bytes, Lifetime : 771 secs
+    Checksum: 0x6021, Sequence: 0x9, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    Area address: 49.0002 (3)
+    LSP Buffer Size: 1492
+    Speaks: IP
+    Speaks: IPV6
+    IP router id: 10.10.10.1
+    IP address: 10.10.10.1
+    Hostname: AR1
+    IP prefix: 10.10.10.1/32, Internal, Metric: default 0, Up
+    IP prefix: 172.16.25.4/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.8/30, Internal, Metric: default 10, Up
+    IP extended prefix: 10.10.10.1/32 metric 0 up
+    IP extended prefix: 172.16.25.4/30 metric 10 up
+    IP extended prefix: 172.16.25.8/30 metric 10 up
+    IS neighbor: AR2.00, Internal, Metric: default 10
+    IS neighbor: DR1.00, Internal, Metric: default 10
+    IS extended neighbor: AR2.00, Metric: default 10
+      IP address: 172.16.25.9
+      Neighbor's IP address: 172.16.25.10
+      Local interface index: 331, Remote interface index: 331
+    IS extended neighbor: DR1.00, Metric: default 10
+      IP address: 172.16.25.6
+      Neighbor's IP address: 172.16.25.5
+      Local interface index: 330, Remote interface index: 330
+  No queued transmissions
+
+AR2.00-00 Sequence: 0x72, Checksum: 0x7e4d, Lifetime: 1106 secs
+   IS neighbor: AR1.00                        Metric:       10
+     Two-way fragment: AR1.00-00, Two-way first fragment: AR1.00-00
+   IS neighbor: AR2.02                        Metric:       10
+     Two-way fragment: AR2.02-00, Two-way first fragment: AR2.02-00
+   IS neighbor: AR2.03                        Metric:       10
+     Two-way fragment: AR2.03-00, Two-way first fragment: AR2.03-00
+   IS neighbor: AR3.00                        Metric:       10
+     Two-way fragment: AR3.00-00, Two-way first fragment: AR3.00-00
+   IP prefix: 10.10.10.2/32                   Metric:        0 Internal Up
+   IP prefix: 172.16.25.8/30                  Metric:       10 Internal Up
+   IP prefix: 172.16.25.12/30                 Metric:       10 Internal Up
+   IP prefix: 172.16.25.60/30                 Metric:       10 Internal Up
+   IP prefix: 172.16.25.68/30                 Metric:       10 Internal Up
+
+  Header: LSP ID: AR2.00-00, Length: 336 bytes
+    Allocated length: 336 bytes, Router ID: 10.10.10.2
+    Remaining lifetime: 1106 secs, Level: 2, Interface: 330
+    Estimated free bytes: 0, Actual free bytes: 0
+    Aging timer expires in: 1106 secs
+    Protocols: IP, IPv6
+
+  Packet: LSP ID: AR2.00-00, Length: 336 bytes, Lifetime : 1113 secs
+    Checksum: 0x7e4d, Sequence: 0x72, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    Area address: 49.0002 (3)
+    LSP Buffer Size: 1492
+    Speaks: IP
+    Speaks: IPV6
+    IP router id: 10.10.10.2
+    IP address: 10.10.10.2
+    Hostname: AR2
+    IS neighbor: AR1.00, Internal, Metric: default 10
+    IS neighbor: AR3.00, Internal, Metric: default 10
+    IS neighbor: AR2.03, Internal, Metric: default 10
+    IS neighbor: AR2.02, Internal, Metric: default 10
+    IS extended neighbor: AR1.00, Metric: default 10
+      IP address: 172.16.25.10
+      Neighbor's IP address: 172.16.25.9
+      Local interface index: 331, Remote interface index: 331
+    IS extended neighbor: AR3.00, Metric: default 10
+      IP address: 172.16.25.13
+      Neighbor's IP address: 172.16.25.14
+      Local interface index: 332, Remote interface index: 331
+    IS extended neighbor: AR2.03, Metric: default 10
+      IP address: 172.16.25.69
+      Local interface index: 330, Remote interface index: 0
+    IS extended neighbor: AR2.02, Metric: default 10
+      IP address: 172.16.25.61
+      Local interface index: 333, Remote interface index: 0
+    IP prefix: 10.10.10.2/32, Internal, Metric: default 0, Up
+    IP prefix: 172.16.25.68/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.8/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.60/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.12/30, Internal, Metric: default 10, Up
+    IP extended prefix: 10.10.10.2/32 metric 0 up
+    IP extended prefix: 172.16.25.68/30 metric 10 up
+    IP extended prefix: 172.16.25.8/30 metric 10 up
+    IP extended prefix: 172.16.25.60/30 metric 10 up
+    IP extended prefix: 172.16.25.12/30 metric 10 up
+  No queued transmissions
+
+AR2.02-00 Sequence: 0x32, Checksum: 0xc655, Lifetime: 1102 secs
+   IS neighbor: AR2.00                        Metric:        0
+     Two-way fragment: AR2.00-00, Two-way first fragment: AR2.00-00
+   IS neighbor: ASW1.00                       Metric:        0
+     Two-way fragment: ASW1.00-00, Two-way first fragment: ASW1.00-00
+
+  Header: LSP ID: AR2.02-00, Length: 76 bytes
+    Allocated length: 284 bytes, Router ID: 0.0.0.0
+    Remaining lifetime: 1102 secs, Level: 2, Interface: 330
+    Estimated free bytes: 208, Actual free bytes: 208
+    Aging timer expires in: 1102 secs
+
+  Packet: LSP ID: AR2.02-00, Length: 76 bytes, Lifetime : 1109 secs
+    Checksum: 0xc655, Sequence: 0x32, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    IS neighbor: AR2.00, Internal, Metric: default 0
+    IS neighbor: ASW1.00, Internal, Metric: default 0
+    IS extended neighbor: AR2.00, Metric: default 0
+    IS extended neighbor: ASW1.00, Metric: default 0
+  No queued transmissions
+
+AR2.03-00 Sequence: 0x2b, Checksum: 0xcd54, Lifetime: 1101 secs
+   IS neighbor: AR2.00                        Metric:        0
+     Two-way fragment: AR2.00-00, Two-way first fragment: AR2.00-00
+   IS neighbor: ASW1.00                       Metric:        0
+     Two-way fragment: ASW1.00-00, Two-way first fragment: ASW1.00-00
+
+  Header: LSP ID: AR2.03-00, Length: 76 bytes
+    Allocated length: 284 bytes, Router ID: 0.0.0.0
+    Remaining lifetime: 1101 secs, Level: 2, Interface: 330
+    Estimated free bytes: 208, Actual free bytes: 208
+    Aging timer expires in: 1101 secs
+
+  Packet: LSP ID: AR2.03-00, Length: 76 bytes, Lifetime : 1108 secs
+    Checksum: 0xcd54, Sequence: 0x2b, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    IS neighbor: AR2.00, Internal, Metric: default 0
+    IS neighbor: ASW1.00, Internal, Metric: default 0
+    IS extended neighbor: AR2.00, Metric: default 0
+    IS extended neighbor: ASW1.00, Metric: default 0
+  No queued transmissions
+
+AR3.00-00 Sequence: 0x66, Checksum: 0x6b0e, Lifetime: 716 secs
+   IS neighbor: AR2.00                        Metric:       10
+     Two-way fragment: AR2.00-00, Two-way first fragment: AR2.00-00
+   IS neighbor: AR4.00                        Metric:       10
+     Two-way fragment: AR4.00-00, Two-way first fragment: AR4.00-00
+   IP prefix: 10.10.10.3/32                   Metric:        0 Internal Up
+   IP prefix: 172.16.25.12/30                 Metric:       10 Internal Up
+   IP prefix: 172.16.25.16/30                 Metric:       10 Internal Up
+
+  Header: LSP ID: AR3.00-00, Length: 218 bytes
+    Allocated length: 284 bytes, Router ID: 10.10.10.3
+    Remaining lifetime: 716 secs, Level: 2, Interface: 330
+    Estimated free bytes: 116, Actual free bytes: 66
+    Aging timer expires in: 716 secs
+    Protocols: IP, IPv6
+
+  Packet: LSP ID: AR3.00-00, Length: 218 bytes, Lifetime : 1192 secs
+    Checksum: 0x6b0e, Sequence: 0x66, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    Area address: 49.0002 (3)
+    LSP Buffer Size: 1492
+    Speaks: IP
+    Speaks: IPV6
+    IP router id: 10.10.10.3
+    IP address: 10.10.10.3
+    Hostname: AR3
+    IS neighbor: AR2.00, Internal, Metric: default 10
+    IS neighbor: AR4.00, Internal, Metric: default 10
+    IS extended neighbor: AR2.00, Metric: default 10
+      IP address: 172.16.25.14
+      Neighbor's IP address: 172.16.25.13
+      Local interface index: 331, Remote interface index: 332
+    IS extended neighbor: AR4.00, Metric: default 10
+      IP address: 172.16.25.17
+      Neighbor's IP address: 172.16.25.18
+      Local interface index: 330, Remote interface index: 330
+    IP prefix: 10.10.10.3/32, Internal, Metric: default 0, Up
+    IP prefix: 172.16.25.12/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.16/30, Internal, Metric: default 10, Up
+    IP extended prefix: 10.10.10.3/32 metric 0 up
+    IP extended prefix: 172.16.25.12/30 metric 10 up
+    IP extended prefix: 172.16.25.16/30 metric 10 up
+  No queued transmissions
+
+AR3.02-00 Sequence: 0x49, Checksum: 0, Lifetime: 0 secs
+
+  Header: LSP ID: AR3.02-00, Length: 27 bytes
+    Allocated length: 284 bytes, Router ID: 0.0.0.0
+    Remaining lifetime: 0 secs, Level: 2, Interface: 330
+    Estimated free bytes: 208, Actual free bytes: 257
+    Garbage collection timer expires in: 660 secs
+
+  Packet: LSP ID: AR3.02-00, Length: 27 bytes, Lifetime : 0 secs
+    Checksum: 0, Sequence: 0x49, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+  No queued transmissions
+
+AR3.03-00 Sequence: 0x3a, Checksum: 0, Lifetime: 0 secs
+
+  Header: LSP ID: AR3.03-00, Length: 27 bytes
+    Allocated length: 284 bytes, Router ID: 0.0.0.0
+    Remaining lifetime: 0 secs, Level: 2, Interface: 330
+    Estimated free bytes: 208, Actual free bytes: 257
+    Garbage collection timer expires in: 669 secs
+
+  Packet: LSP ID: AR3.03-00, Length: 27 bytes, Lifetime : 0 secs
+    Checksum: 0, Sequence: 0x3a, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+  No queued transmissions
+
+AR4.00-00 Sequence: 0x83, Checksum: 0x79ba, Lifetime: 821 secs
+   IS neighbor: AR3.00                        Metric:       10
+     Two-way fragment: AR3.00-00, Two-way first fragment: AR3.00-00
+   IS neighbor: AR5.00                        Metric:       10
+     Two-way fragment: AR5.00-00, Two-way first fragment: AR5.00-00
+   IP prefix: 10.10.10.4/32                   Metric:        0 Internal Up
+   IP prefix: 172.16.25.16/30                 Metric:       10 Internal Up
+   IP prefix: 172.16.25.20/30                 Metric:       10 Internal Up
+
+  Header: LSP ID: AR4.00-00, Length: 218 bytes
+    Allocated length: 284 bytes, Router ID: 10.10.10.4
+    Remaining lifetime: 821 secs, Level: 2, Interface: 330
+    Estimated free bytes: 116, Actual free bytes: 66
+    Aging timer expires in: 821 secs
+    Protocols: IP, IPv6
+
+  Packet: LSP ID: AR4.00-00, Length: 218 bytes, Lifetime : 828 secs
+    Checksum: 0x79ba, Sequence: 0x83, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    Area address: 49.0002 (3)
+    LSP Buffer Size: 1492
+    Speaks: IP
+    Speaks: IPV6
+    IP router id: 10.10.10.4
+    IP address: 10.10.10.4
+    Hostname: AR4
+    IS neighbor: AR3.00, Internal, Metric: default 10
+    IS neighbor: AR5.00, Internal, Metric: default 10
+    IS extended neighbor: AR3.00, Metric: default 10
+      IP address: 172.16.25.18
+      Neighbor's IP address: 172.16.25.17
+      Local interface index: 330, Remote interface index: 330
+    IS extended neighbor: AR5.00, Metric: default 10
+      IP address: 172.16.25.21
+      Neighbor's IP address: 172.16.25.22
+      Local interface index: 331, Remote interface index: 330
+    IP prefix: 10.10.10.4/32, Internal, Metric: default 0, Up
+    IP prefix: 172.16.25.20/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.16/30, Internal, Metric: default 10, Up
+    IP extended prefix: 10.10.10.4/32 metric 0 up
+    IP extended prefix: 172.16.25.20/30 metric 10 up
+    IP extended prefix: 172.16.25.16/30 metric 10 up
+  No queued transmissions
+
+AR5.00-00 Sequence: 0x76, Checksum: 0x5f11, Lifetime: 825 secs
+   IS neighbor: AR4.00                        Metric:       10
+     Two-way fragment: AR4.00-00, Two-way first fragment: AR4.00-00
+   IS neighbor: DR2.00                        Metric:       10
+     Two-way fragment: DR2.00-00, Two-way first fragment: DR2.00-00
+   IP prefix: 10.10.10.5/32                   Metric:        0 Internal Up
+   IP prefix: 172.16.25.20/30                 Metric:       10 Internal Up
+   IP prefix: 172.16.25.24/30                 Metric:       10 Internal Up
+
+  Header: LSP ID: AR5.00-00, Length: 218 bytes
+    Allocated length: 284 bytes, Router ID: 10.10.10.5
+    Remaining lifetime: 825 secs, Level: 2, Interface: 332
+    Estimated free bytes: 116, Actual free bytes: 66
+    Aging timer expires in: 825 secs
+    Protocols: IP, IPv6
+
+  Packet: LSP ID: AR5.00-00, Length: 218 bytes, Lifetime : 1194 secs
+    Checksum: 0x5f11, Sequence: 0x76, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    Area address: 49.0002 (3)
+    LSP Buffer Size: 1492
+    Speaks: IP
+    Speaks: IPV6
+    IP router id: 10.10.10.5
+    IP address: 10.10.10.5
+    Hostname: AR5
+    IP prefix: 10.10.10.5/32, Internal, Metric: default 0, Up
+    IP prefix: 172.16.25.24/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.20/30, Internal, Metric: default 10, Up
+    IP extended prefix: 10.10.10.5/32 metric 0 up
+    IP extended prefix: 172.16.25.24/30 metric 10 up
+    IP extended prefix: 172.16.25.20/30 metric 10 up
+    IS neighbor: AR4.00, Internal, Metric: default 10
+    IS neighbor: DR2.00, Internal, Metric: default 10
+    IS extended neighbor: AR4.00, Metric: default 10
+      IP address: 172.16.25.22
+      Neighbor's IP address: 172.16.25.21
+      Local interface index: 330, Remote interface index: 331
+    IS extended neighbor: DR2.00, Metric: default 10
+      IP address: 172.16.25.26
+      Neighbor's IP address: 172.16.25.25
+      Local interface index: 331, Remote interface index: 335
+  No queued transmissions
+
+AR5.02-00 Sequence: 0x42, Checksum: 0, Lifetime: 0 secs
+
+  Header: LSP ID: AR5.02-00, Length: 27 bytes
+    Allocated length: 284 bytes, Router ID: 0.0.0.0
+    Remaining lifetime: 0 secs, Level: 2, Interface: 332
+    Estimated free bytes: 208, Actual free bytes: 257
+    Garbage collection timer expires in: 805 secs
+
+  Packet: LSP ID: AR5.02-00, Length: 27 bytes, Lifetime : 0 secs
+    Checksum: 0, Sequence: 0x42, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+  No queued transmissions
+
+AR6.00-00 Sequence: 0x72, Checksum: 0x3eee, Lifetime: 1179 secs
+   IS neighbor: AR7.00                        Metric:       10
+     Two-way fragment: AR7.00-00, Two-way first fragment: AR7.00-00
+   IS neighbor: DR1.00                        Metric:       10
+     Two-way fragment: DR1.00-00, Two-way first fragment: DR1.00-00
+   IP prefix: 10.10.10.6/32                   Metric:        0 Internal Up
+   IP prefix: 172.16.25.28/30                 Metric:       10 Internal Up
+   IP prefix: 172.16.25.32/30                 Metric:       10 Internal Up
+
+  Header: LSP ID: AR6.00-00, Length: 218 bytes
+    Allocated length: 284 bytes, Router ID: 10.10.10.6
+    Remaining lifetime: 1179 secs, Level: 2, Interface: 333
+    Estimated free bytes: 78, Actual free bytes: 66
+    Aging timer expires in: 1179 secs
+    Protocols: IP, IPv6
+
+  Packet: LSP ID: AR6.00-00, Length: 218 bytes, Lifetime : 1196 secs
+    Checksum: 0x3eee, Sequence: 0x72, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    Area address: 49.0002 (3)
+    LSP Buffer Size: 1492
+    Speaks: IP
+    Speaks: IPV6
+    IP router id: 10.10.10.6
+    IP address: 10.10.10.6
+    Hostname: AR6
+    IP prefix: 10.10.10.6/32, Internal, Metric: default 0, Up
+    IP prefix: 172.16.25.28/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.32/30, Internal, Metric: default 10, Up
+    IP extended prefix: 10.10.10.6/32 metric 0 up
+    IP extended prefix: 172.16.25.28/30 metric 10 up
+    IP extended prefix: 172.16.25.32/30 metric 10 up
+    IS neighbor: DR1.00, Internal, Metric: default 10
+    IS neighbor: AR7.00, Internal, Metric: default 10
+    IS extended neighbor: DR1.00, Metric: default 10
+      IP address: 172.16.25.30
+      Neighbor's IP address: 172.16.25.29
+      Local interface index: 331, Remote interface index: 333
+    IS extended neighbor: AR7.00, Metric: default 10
+      IP address: 172.16.25.33
+      Neighbor's IP address: 172.16.25.34
+      Local interface index: 330, Remote interface index: 330
+  No queued transmissions
+
+AR6.02-00 Sequence: 0x2a, Checksum: 0, Lifetime: 0 secs
+
+  Header: LSP ID: AR6.02-00, Length: 27 bytes
+    Allocated length: 284 bytes, Router ID: 0.0.0.0
+    Remaining lifetime: 0 secs, Level: 2, Interface: 333
+    Estimated free bytes: 208, Actual free bytes: 257
+    Garbage collection timer expires in: 1168 secs
+
+  Packet: LSP ID: AR6.02-00, Length: 27 bytes, Lifetime : 0 secs
+    Checksum: 0, Sequence: 0x2a, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+  No queued transmissions
+
+AR7.00-00 Sequence: 0x57, Checksum: 0x9829, Lifetime: 1173 secs
+   IS neighbor: AR6.00                        Metric:       10
+     Two-way fragment: AR6.00-00, Two-way first fragment: AR6.00-00
+   IS neighbor: AR8.00                        Metric:       10
+     Two-way fragment: AR8.00-00, Two-way first fragment: AR8.00-00
+   IP prefix: 10.10.10.7/32                   Metric:        0 Internal Up
+   IP prefix: 172.16.25.32/30                 Metric:       10 Internal Up
+   IP prefix: 172.16.25.36/30                 Metric:       10 Internal Up
+
+  Header: LSP ID: AR7.00-00, Length: 218 bytes
+    Allocated length: 284 bytes, Router ID: 10.10.10.7
+    Remaining lifetime: 1173 secs, Level: 2, Interface: 332
+    Estimated free bytes: 116, Actual free bytes: 66
+    Aging timer expires in: 1173 secs
+    Protocols: IP, IPv6
+
+  Packet: LSP ID: AR7.00-00, Length: 218 bytes, Lifetime : 1190 secs
+    Checksum: 0x9829, Sequence: 0x57, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    Area address: 49.0002 (3)
+    LSP Buffer Size: 1492
+    Speaks: IP
+    Speaks: IPV6
+    IP router id: 10.10.10.7
+    IP address: 10.10.10.7
+    Hostname: AR7
+    IS neighbor: AR8.00, Internal, Metric: default 10
+    IS neighbor: AR6.00, Internal, Metric: default 10
+    IS extended neighbor: AR8.00, Metric: default 10
+      IP address: 172.16.25.37
+      Neighbor's IP address: 172.16.25.38
+      Local interface index: 331, Remote interface index: 330
+    IS extended neighbor: AR6.00, Metric: default 10
+      IP address: 172.16.25.34
+      Neighbor's IP address: 172.16.25.33
+      Local interface index: 330, Remote interface index: 330
+    IP prefix: 10.10.10.7/32, Internal, Metric: default 0, Up
+    IP prefix: 172.16.25.36/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.32/30, Internal, Metric: default 10, Up
+    IP extended prefix: 10.10.10.7/32 metric 0 up
+    IP extended prefix: 172.16.25.36/30 metric 10 up
+    IP extended prefix: 172.16.25.32/30 metric 10 up
+  No queued transmissions
+
+AR8.00-00 Sequence: 0x4a, Checksum: 0x1d84, Lifetime: 1109 secs
+   IS neighbor: AR7.00                        Metric:       10
+     Two-way fragment: AR7.00-00, Two-way first fragment: AR7.00-00
+   IS neighbor: AR9.00                        Metric:       10
+     Two-way fragment: AR9.00-00, Two-way first fragment: AR9.00-00
+   IP prefix: 10.10.10.8/32                   Metric:        0 Internal Up
+   IP prefix: 172.16.25.36/30                 Metric:       10 Internal Up
+   IP prefix: 172.16.25.40/30                 Metric:       10 Internal Up
+
+  Header: LSP ID: AR8.00-00, Length: 218 bytes
+    Allocated length: 284 bytes, Router ID: 10.10.10.8
+    Remaining lifetime: 1109 secs, Level: 2, Interface: 332
+    Estimated free bytes: 116, Actual free bytes: 66
+    Aging timer expires in: 1109 secs
+    Protocols: IP, IPv6
+
+  Packet: LSP ID: AR8.00-00, Length: 218 bytes, Lifetime : 1116 secs
+    Checksum: 0x1d84, Sequence: 0x4a, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    Area address: 49.0002 (3)
+    LSP Buffer Size: 1492
+    Speaks: IP
+    Speaks: IPV6
+    IP router id: 10.10.10.8
+    IP address: 10.10.10.8
+    Hostname: AR8
+    IS neighbor: AR9.00, Internal, Metric: default 10
+    IS neighbor: AR7.00, Internal, Metric: default 10
+    IS extended neighbor: AR9.00, Metric: default 10
+      IP address: 172.16.25.41
+      Neighbor's IP address: 172.16.25.42
+      Local interface index: 331, Remote interface index: 332
+    IS extended neighbor: AR7.00, Metric: default 10
+      IP address: 172.16.25.38
+      Neighbor's IP address: 172.16.25.37
+      Local interface index: 330, Remote interface index: 331
+    IP prefix: 10.10.10.8/32, Internal, Metric: default 0, Up
+    IP prefix: 172.16.25.40/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.36/30, Internal, Metric: default 10, Up
+    IP extended prefix: 10.10.10.8/32 metric 0 up
+    IP extended prefix: 172.16.25.40/30 metric 10 up
+    IP extended prefix: 172.16.25.36/30 metric 10 up
+  No queued transmissions
+
+AR8.02-00 Sequence: 0x21, Checksum: 0, Lifetime: 0 secs
+
+  Header: LSP ID: AR8.02-00, Length: 27 bytes
+    Allocated length: 284 bytes, Router ID: 0.0.0.0
+    Remaining lifetime: 0 secs, Level: 2, Interface: 332
+    Estimated free bytes: 208, Actual free bytes: 257
+    Garbage collection timer expires in: 925 secs
+
+  Packet: LSP ID: AR8.02-00, Length: 27 bytes, Lifetime : 0 secs
+    Checksum: 0, Sequence: 0x21, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+  No queued transmissions
+
+AR8.03-00 Sequence: 0x39, Checksum: 0, Lifetime: 0 secs
+
+  Header: LSP ID: AR8.03-00, Length: 27 bytes
+    Allocated length: 284 bytes, Router ID: 0.0.0.0
+    Remaining lifetime: 0 secs, Level: 2, Interface: 332
+    Estimated free bytes: 208, Actual free bytes: 257
+    Garbage collection timer expires in: 981 secs
+
+  Packet: LSP ID: AR8.03-00, Length: 27 bytes, Lifetime : 0 secs
+    Checksum: 0, Sequence: 0x39, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+  No queued transmissions
+
+AR9.00-00 Sequence: 0x8b, Checksum: 0x5f21, Lifetime: 1101 secs
+   IS neighbor: AR8.00                        Metric:       10
+     Two-way fragment: AR8.00-00, Two-way first fragment: AR8.00-00
+   IS neighbor: AR11.02                       Metric:       10
+     Two-way fragment: AR11.02-00, Two-way first fragment: AR11.02-00
+   IS neighbor: AR11.03                       Metric:       10
+     Two-way fragment: AR11.03-00, Two-way first fragment: AR11.03-00
+   IS neighbor: DR2.00                        Metric:       10
+     Two-way fragment: DR2.00-00, Two-way first fragment: DR2.00-00
+   IP prefix: 10.10.10.9/32                   Metric:        0 Internal Up
+   IP prefix: 172.16.25.40/30                 Metric:       10 Internal Up
+   IP prefix: 172.16.25.44/30                 Metric:       10 Internal Up
+   IP prefix: 172.16.25.56/30                 Metric:       10 Internal Up
+   IP prefix: 172.16.25.80/29                 Metric:       10 Internal Up
+
+  Header: LSP ID: AR9.00-00, Length: 336 bytes
+    Allocated length: 336 bytes, Router ID: 10.10.10.9
+    Remaining lifetime: 1101 secs, Level: 2, Interface: 332
+    Estimated free bytes: 74, Actual free bytes: 0
+    Aging timer expires in: 1101 secs
+    Protocols: IP, IPv6
+
+  Packet: LSP ID: AR9.00-00, Length: 336 bytes, Lifetime : 1107 secs
+    Checksum: 0x5f21, Sequence: 0x8b, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    Area address: 49.0002 (3)
+    LSP Buffer Size: 1492
+    Speaks: IP
+    Speaks: IPV6
+    IP router id: 10.10.10.9
+    IP address: 10.10.10.9
+    Hostname: AR9
+    IS neighbor: AR11.02, Internal, Metric: default 10
+    IS neighbor: DR2.00, Internal, Metric: default 10
+    IS neighbor: AR8.00, Internal, Metric: default 10
+    IS neighbor: AR11.03, Internal, Metric: default 10
+    IS extended neighbor: AR11.02, Metric: default 10
+      IP address: 172.16.25.82
+      Local interface index: 331, Remote interface index: 0
+    IS extended neighbor: DR2.00, Metric: default 10
+      IP address: 172.16.25.46
+      Neighbor's IP address: 172.16.25.45
+      Local interface index: 333, Remote interface index: 333
+    IS extended neighbor: AR8.00, Metric: default 10
+      IP address: 172.16.25.42
+      Neighbor's IP address: 172.16.25.41
+      Local interface index: 332, Remote interface index: 331
+    IS extended neighbor: AR11.03, Metric: default 10
+      IP address: 172.16.25.57
+      Local interface index: 330, Remote interface index: 0
+    IP prefix: 10.10.10.9/32, Internal, Metric: default 0, Up
+    IP prefix: 172.16.25.56/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.80/29, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.44/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.40/30, Internal, Metric: default 10, Up
+    IP extended prefix: 10.10.10.9/32 metric 0 up
+    IP extended prefix: 172.16.25.56/30 metric 10 up
+    IP extended prefix: 172.16.25.80/29 metric 10 up
+    IP extended prefix: 172.16.25.44/30 metric 10 up
+    IP extended prefix: 172.16.25.40/30 metric 10 up
+  No queued transmissions
+
+AR10.00-00 Sequence: 0xb5, Checksum: 0xea59, Lifetime: 1169 secs
+   IS neighbor: DR1.03                        Metric:       10
+     Two-way fragment: DR1.03-00, Two-way first fragment: DR1.03-00
+   IS neighbor: DR2.02                        Metric:       10
+     Two-way fragment: DR2.02-00, Two-way first fragment: DR2.02-00
+   IP prefix: 10.10.10.10/32                  Metric:        0 Internal Up
+   IP prefix: 172.16.25.48/30                 Metric:       10 Internal Up
+   IP prefix: 172.16.25.52/30                 Metric:       10 Internal Up
+   IP prefix: 172.16.25.64/30                 Metric:       10 Internal Up
+
+  Header: LSP ID: AR10.00-00, Length: 228 bytes
+    Allocated length: 284 bytes, Router ID: 10.10.10.10
+    Remaining lifetime: 1169 secs, Level: 2, Interface: 331
+    Estimated free bytes: 94, Actual free bytes: 56
+    Aging timer expires in: 1169 secs
+    Protocols: IP, IPv6
+
+  Packet: LSP ID: AR10.00-00, Length: 228 bytes, Lifetime : 1176 secs
+    Checksum: 0xea59, Sequence: 0xb5, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    Area address: 49.0002 (3)
+    LSP Buffer Size: 1492
+    Speaks: IP
+    Speaks: IPV6
+    IP router id: 10.10.10.10
+    IP address: 10.10.10.10
+    Hostname: AR10
+    IP prefix: 10.10.10.10/32, Internal, Metric: default 0, Up
+    IP prefix: 172.16.25.48/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.64/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.52/30, Internal, Metric: default 10, Up
+    IP extended prefix: 10.10.10.10/32 metric 0 up
+    IP extended prefix: 172.16.25.48/30 metric 10 up
+    IP extended prefix: 172.16.25.64/30 metric 10 up
+    IP extended prefix: 172.16.25.52/30 metric 10 up
+    IS neighbor: DR2.02, Internal, Metric: default 10
+    IS neighbor: DR1.03, Internal, Metric: default 10
+    IS extended neighbor: DR2.02, Metric: default 10
+      IP address: 172.16.25.53
+      Local interface index: 332, Remote interface index: 0
+    IS extended neighbor: DR1.03, Metric: default 10
+      IP address: 172.16.25.50
+      Local interface index: 330, Remote interface index: 0
+  No queued transmissions
+
+AR11.00-00 Sequence: 0x3a, Checksum: 0xdf76, Lifetime: 1099 secs
+   IS neighbor: AR11.02                       Metric:       10
+     Two-way fragment: AR11.02-00, Two-way first fragment: AR11.02-00
+   IS neighbor: AR11.03                       Metric:       10
+     Two-way fragment: AR11.03-00, Two-way first fragment: AR11.03-00
+   IP prefix: 10.10.10.11/32                  Metric:        0 Internal Up
+   IP prefix: 172.16.25.56/30                 Metric:       10 Internal Up
+   IP prefix: 172.16.25.80/29                 Metric:       10 Internal Up
+
+  Header: LSP ID: AR11.00-00, Length: 207 bytes
+    Allocated length: 284 bytes, Router ID: 10.10.10.11
+    Remaining lifetime: 1099 secs, Level: 2, Interface: 331
+    Estimated free bytes: 115, Actual free bytes: 77
+    Aging timer expires in: 1099 secs
+    Protocols: IP, IPv6
+
+  Packet: LSP ID: AR11.00-00, Length: 207 bytes, Lifetime : 1105 secs
+    Checksum: 0xdf76, Sequence: 0x3a, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    Area address: 49.0002 (3)
+    LSP Buffer Size: 1492
+    Speaks: IP
+    Speaks: IPV6
+    IP router id: 10.10.10.11
+    IP address: 10.10.10.11
+    Hostname: AR11
+    IP prefix: 10.10.10.11/32, Internal, Metric: default 0, Up
+    IP prefix: 172.16.25.56/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.80/29, Internal, Metric: default 10, Up
+    IP extended prefix: 10.10.10.11/32 metric 0 up
+    IP extended prefix: 172.16.25.56/30 metric 10 up
+    IP extended prefix: 172.16.25.80/29 metric 10 up
+    IS neighbor: AR11.02, Internal, Metric: default 10
+    IS neighbor: AR11.03, Internal, Metric: default 10
+    IS extended neighbor: AR11.02, Metric: default 10
+      IP address: 172.16.25.83
+      Local interface index: 331, Remote interface index: 0
+    IS extended neighbor: AR11.03, Metric: default 10
+      IP address: 172.16.25.58
+      Local interface index: 330, Remote interface index: 0
+  No queued transmissions
+
+AR11.02-00 Sequence: 0x6d, Checksum: 0x3805, Lifetime: 1162 secs
+   IS neighbor: AR9.00                        Metric:        0
+     Two-way fragment: AR9.00-00, Two-way first fragment: AR9.00-00
+   IS neighbor: AR11.00                       Metric:        0
+     Two-way fragment: AR11.00-00, Two-way first fragment: AR11.00-00
+   IS neighbor: DR2.00                        Metric:        0
+     Two-way fragment: DR2.00-00, Two-way first fragment: DR2.00-00
+
+  Header: LSP ID: AR11.02-00, Length: 98 bytes
+    Allocated length: 284 bytes, Router ID: 0.0.0.0
+    Remaining lifetime: 1162 secs, Level: 2, Interface: 332
+    Estimated free bytes: 208, Actual free bytes: 186
+    Aging timer expires in: 1162 secs
+
+  Packet: LSP ID: AR11.02-00, Length: 98 bytes, Lifetime : 1169 secs
+    Checksum: 0x3805, Sequence: 0x6d, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    IS neighbor: AR11.00, Internal, Metric: default 0
+    IS neighbor: AR9.00, Internal, Metric: default 0
+    IS neighbor: DR2.00, Internal, Metric: default 0
+    IS extended neighbor: AR11.00, Metric: default 0
+    IS extended neighbor: AR9.00, Metric: default 0
+    IS extended neighbor: DR2.00, Metric: default 0
+  No queued transmissions
+
+AR11.03-00 Sequence: 0x39, Checksum: 0xfbdc, Lifetime: 1100 secs
+   IS neighbor: AR9.00                        Metric:        0
+     Two-way fragment: AR9.00-00, Two-way first fragment: AR9.00-00
+   IS neighbor: AR11.00                       Metric:        0
+     Two-way fragment: AR11.00-00, Two-way first fragment: AR11.00-00
+
+  Header: LSP ID: AR11.03-00, Length: 76 bytes
+    Allocated length: 284 bytes, Router ID: 0.0.0.0
+    Remaining lifetime: 1100 secs, Level: 2, Interface: 332
+    Estimated free bytes: 208, Actual free bytes: 208
+    Aging timer expires in: 1100 secs
+
+  Packet: LSP ID: AR11.03-00, Length: 76 bytes, Lifetime : 1107 secs
+    Checksum: 0xfbdc, Sequence: 0x39, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    IS neighbor: AR11.00, Internal, Metric: default 0
+    IS neighbor: AR9.00, Internal, Metric: default 0
+    IS extended neighbor: AR11.00, Metric: default 0
+    IS extended neighbor: AR9.00, Metric: default 0
+  No queued transmissions
+
+AR16.00-00 Sequence: 0x1e, Checksum: 0xcbd8, Lifetime: 1106 secs
+   IS neighbor: AR16.01                       Metric:       10
+     Two-way fragment: AR16.01-00, Two-way first fragment: AR16.01-00
+   IP prefix: 10.10.10.16/32                  Metric:        0 Internal Up
+   IP prefix: 172.16.25.72/30                 Metric:       10 Internal Up
+
+  Header: LSP ID: AR16.00-00, Length: 88 bytes
+    Allocated length: 284 bytes, Router ID: 0.0.0.0
+    Remaining lifetime: 1106 secs, Level: 2, Interface: 332
+    Estimated free bytes: 196, Actual free bytes: 196
+    Aging timer expires in: 1106 secs
+    Protocols: IP
+
+  Packet: LSP ID: AR16.00-00, Length: 88 bytes, Lifetime : 1113 secs
+    Checksum: 0xcbd8, Sequence: 0x1e, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    Area address: 49.0002 (3)
+    Speaks: IP
+    Hostname: AR16
+    IS neighbor: AR16.01, Internal, Metric: default 10
+    IP address: 10.10.10.16
+    IP prefix: 10.10.10.16/32, Internal, Metric: default 0, Up
+    IP prefix: 172.16.25.72/30, Internal, Metric: default 10, Up
+  No queued transmissions
+
+AR16.01-00 Sequence: 0x16, Checksum: 0x3ad6, Lifetime: 1164 secs
+   IS neighbor: AR16.00                       Metric:        0
+     Two-way fragment: AR16.00-00, Two-way first fragment: AR16.00-00
+   IS neighbor: DR2.00                        Metric:        0
+     Two-way fragment: DR2.00-00, Two-way first fragment: DR2.00-00
+
+  Header: LSP ID: AR16.01-00, Length: 52 bytes
+    Allocated length: 284 bytes, Router ID: 0.0.0.0
+    Remaining lifetime: 1164 secs, Level: 2, Interface: 332
+    Estimated free bytes: 232, Actual free bytes: 232
+    Aging timer expires in: 1164 secs
+
+  Packet: LSP ID: AR16.01-00, Length: 52 bytes, Lifetime : 1171 secs
+    Checksum: 0x3ad6, Sequence: 0x16, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    IS neighbor: AR16.00, Internal, Metric: default 0
+    IS neighbor: DR2.00, Internal, Metric: default 0
+  No queued transmissions
+
+DR1.00-00 Sequence: 0x8d, Checksum: 0x1985, Lifetime: 1181 secs
+   IS neighbor: AR1.00                        Metric:       10
+     Two-way fragment: AR1.00-00, Two-way first fragment: AR1.00-00
+   IS neighbor: AR6.00                        Metric:       10
+     Two-way fragment: AR6.00-00, Two-way first fragment: AR6.00-00
+   IS neighbor: DR1.03                        Metric:       10
+     Two-way fragment: DR1.03-00, Two-way first fragment: DR1.03-00
+   IS neighbor: DR2.00                        Metric:       10
+     Two-way fragment: DR2.00-00, Two-way first fragment: DR2.00-00
+   IP prefix: 10.10.10.253/32                 Metric:        0 Internal Up
+   IP prefix: 172.16.25.0/30                  Metric:       10 Internal Up
+   IP prefix: 172.16.25.4/30                  Metric:       10 Internal Up
+   IP prefix: 172.16.25.28/30                 Metric:       10 Internal Up
+   IP prefix: 172.16.25.48/30                 Metric:       10 Internal Up
+
+  Header: LSP ID: DR1.00-00, Length: 342 bytes
+    Allocated length: 1492 bytes, Router ID: 10.10.10.253
+    Remaining lifetime: 1181 secs, Level: 2, Interface: 0
+    Estimated free bytes: 1097, Actual free bytes: 1150
+    Aging timer expires in: 1181 secs
+    Protocols: IP, IPv6
+
+  Packet: LSP ID: DR1.00-00, Length: 342 bytes, Lifetime : 1198 secs
+    Checksum: 0x1985, Sequence: 0x8d, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    Area address: 49.0002 (3)
+    LSP Buffer Size: 1492
+    Speaks: IP
+    Speaks: IPV6
+    IP router id: 10.10.10.253
+    IP address: 10.10.10.253
+    Hostname: DR1
+    IS neighbor: AR1.00, Internal, Metric: default 10
+    IS neighbor: DR2.00, Internal, Metric: default 10
+    IS neighbor: DR1.03, Internal, Metric: default 10
+    IS neighbor: AR6.00, Internal, Metric: default 10
+    IS extended neighbor: AR1.00, Metric: default 10
+      IP address: 172.16.25.5
+      Neighbor's IP address: 172.16.25.6
+      Local interface index: 330, Remote interface index: 330
+    IS extended neighbor: DR2.00, Metric: default 10
+      IP address: 172.16.25.1
+      Neighbor's IP address: 172.16.25.2
+      Local interface index: 332, Remote interface index: 332
+    IS extended neighbor: DR1.03, Metric: default 10
+      IP address: 172.16.25.49
+      Local interface index: 331, Remote interface index: 0
+    IS extended neighbor: AR6.00, Metric: default 10
+      IP address: 172.16.25.29
+      Neighbor's IP address: 172.16.25.30
+      Local interface index: 333, Remote interface index: 331
+    IP prefix: 10.10.10.253/32, Internal, Metric: default 0, Up
+    IP prefix: 172.16.25.4/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.48/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.28/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.0/30, Internal, Metric: default 10, Up
+    IP extended prefix: 10.10.10.253/32 metric 0 up
+    IP extended prefix: 172.16.25.4/30 metric 10 up
+    IP extended prefix: 172.16.25.48/30 metric 10 up
+    IP extended prefix: 172.16.25.28/30 metric 10 up
+    IP extended prefix: 172.16.25.0/30 metric 10 up
+  No queued transmissions
+
+DR1.02-00 Sequence: 0x4a, Checksum: 0, Lifetime: 0 secs
+
+  Header: LSP ID: DR1.02-00, Length: 27 bytes
+    Allocated length: 1492 bytes, Router ID: 0.0.0.0
+    Remaining lifetime: 0 secs, Level: 2, Interface: 0
+    Estimated free bytes: 1395, Actual free bytes: 1465
+    Garbage collection timer expires in: 395 secs
+
+  Packet: LSP ID: DR1.02-00, Length: 27 bytes, Lifetime : 0 secs
+    Checksum: 0, Sequence: 0x4a, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+  No queued transmissions
+
+DR1.03-00 Sequence: 0x52, Checksum: 0x5a8a, Lifetime: 1166 secs
+   IS neighbor: AR10.00                       Metric:        0
+     Two-way fragment: AR10.00-00, Two-way first fragment: AR10.00-00
+   IS neighbor: DR1.00                        Metric:        0
+     Two-way fragment: DR1.00-00, Two-way first fragment: DR1.00-00
+
+  Header: LSP ID: DR1.03-00, Length: 76 bytes
+    Allocated length: 1492 bytes, Router ID: 0.0.0.0
+    Remaining lifetime: 1166 secs, Level: 2, Interface: 0
+    Estimated free bytes: 1349, Actual free bytes: 1416
+    Aging timer expires in: 1166 secs
+
+  Packet: LSP ID: DR1.03-00, Length: 76 bytes, Lifetime : 1172 secs
+    Checksum: 0x5a8a, Sequence: 0x52, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    IS neighbor: DR1.00, Internal, Metric: default 0
+    IS neighbor: AR10.00, Internal, Metric: default 0
+    IS extended neighbor: DR1.00, Metric: default 0
+    IS extended neighbor: AR10.00, Metric: default 0
+  No queued transmissions
+
+DR1.04-00 Sequence: 0x43, Checksum: 0, Lifetime: 0 secs
+
+  Header: LSP ID: DR1.04-00, Length: 27 bytes
+    Allocated length: 1492 bytes, Router ID: 0.0.0.0
+    Remaining lifetime: 0 secs, Level: 2, Interface: 0
+    Estimated free bytes: 1395, Actual free bytes: 1465
+    Garbage collection timer expires in: 357 secs
+
+  Packet: LSP ID: DR1.04-00, Length: 27 bytes, Lifetime : 0 secs
+    Checksum: 0, Sequence: 0x43, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+  No queued transmissions
+
+DR2.00-00 Sequence: 0xc0, Checksum: 0x1251, Lifetime: 1165 secs
+   IS neighbor: AR5.00                        Metric:       10
+     Two-way fragment: AR5.00-00, Two-way first fragment: AR5.00-00
+   IS neighbor: AR9.00                        Metric:       10
+     Two-way fragment: AR9.00-00, Two-way first fragment: AR9.00-00
+   IS neighbor: AR11.02                       Metric:       10
+     Two-way fragment: AR11.02-00, Two-way first fragment: AR11.02-00
+   IS neighbor: AR16.01                       Metric:       10
+     Two-way fragment: AR16.01-00, Two-way first fragment: AR16.01-00
+   IS neighbor: DR1.00                        Metric:       10
+     Two-way fragment: DR1.00-00, Two-way first fragment: DR1.00-00
+   IS neighbor: DR2.02                        Metric:       10
+     Two-way fragment: DR2.02-00, Two-way first fragment: DR2.02-00
+   IP prefix: 10.10.10.254/32                 Metric:        0 Internal Up
+   IP prefix: 172.16.25.0/30                  Metric:       10 Internal Up
+   IP prefix: 172.16.25.24/30                 Metric:       10 Internal Up
+   IP prefix: 172.16.25.44/30                 Metric:       10 Internal Up
+   IP prefix: 172.16.25.52/30                 Metric:       10 Internal Up
+   IP prefix: 172.16.25.72/30                 Metric:       10 Internal Up
+   IP prefix: 172.16.25.80/29                 Metric:       10 Internal Up
+
+  Header: LSP ID: DR2.00-00, Length: 460 bytes
+    Allocated length: 460 bytes, Router ID: 10.10.10.254
+    Remaining lifetime: 1165 secs, Level: 2, Interface: 332
+    Estimated free bytes: 32, Actual free bytes: 0
+    Aging timer expires in: 1165 secs
+    Protocols: IP, IPv6
+
+  Packet: LSP ID: DR2.00-00, Length: 460 bytes, Lifetime : 1171 secs
+    Checksum: 0x1251, Sequence: 0xc0, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    Area address: 49.0002 (3)
+    LSP Buffer Size: 1492
+    Speaks: IP
+    Speaks: IPV6
+    IP router id: 10.10.10.254
+    IP address: 10.10.10.254
+    Hostname: DR2
+    IS neighbor: DR1.00, Internal, Metric: default 10
+    IS neighbor: AR5.00, Internal, Metric: default 10
+    IS neighbor: AR9.00, Internal, Metric: default 10
+    IS neighbor: DR2.02, Internal, Metric: default 10
+    IS neighbor: AR11.02, Internal, Metric: default 10
+    IS neighbor: AR16.01, Internal, Metric: default 10
+    IS extended neighbor: DR1.00, Metric: default 10
+      IP address: 172.16.25.2
+      Neighbor's IP address: 172.16.25.1
+      Local interface index: 332, Remote interface index: 332
+    IS extended neighbor: AR5.00, Metric: default 10
+      IP address: 172.16.25.25
+      Neighbor's IP address: 172.16.25.26
+      Local interface index: 335, Remote interface index: 331
+    IS extended neighbor: AR9.00, Metric: default 10
+      IP address: 172.16.25.45
+      Neighbor's IP address: 172.16.25.46
+      Local interface index: 333, Remote interface index: 333
+    IS extended neighbor: DR2.02, Metric: default 10
+      IP address: 172.16.25.54
+      Local interface index: 334, Remote interface index: 0
+    IS extended neighbor: AR11.02, Metric: default 10
+      IP address: 172.16.25.81
+      Local interface index: 331, Remote interface index: 0
+    IS extended neighbor: AR16.01, Metric: default 10
+      IP address: 172.16.25.73
+      Local interface index: 330, Remote interface index: 0
+    IP prefix: 10.10.10.254/32, Internal, Metric: default 0, Up
+    IP prefix: 172.16.25.72/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.80/29, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.52/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.0/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.24/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.44/30, Internal, Metric: default 10, Up
+    IP extended prefix: 10.10.10.254/32 metric 0 up
+    IP extended prefix: 172.16.25.72/30 metric 10 up
+    IP extended prefix: 172.16.25.80/29 metric 10 up
+    IP extended prefix: 172.16.25.52/30 metric 10 up
+    IP extended prefix: 172.16.25.0/30 metric 10 up
+    IP extended prefix: 172.16.25.24/30 metric 10 up
+    IP extended prefix: 172.16.25.44/30 metric 10 up
+  No queued transmissions
+
+DR2.02-00 Sequence: 0x5b, Checksum: 0x7762, Lifetime: 1102 secs
+   IS neighbor: AR10.00                       Metric:        0
+     Two-way fragment: AR10.00-00, Two-way first fragment: AR10.00-00
+   IS neighbor: DR2.00                        Metric:        0
+     Two-way fragment: DR2.00-00, Two-way first fragment: DR2.00-00
+
+  Header: LSP ID: DR2.02-00, Length: 76 bytes
+    Allocated length: 284 bytes, Router ID: 0.0.0.0
+    Remaining lifetime: 1102 secs, Level: 2, Interface: 332
+    Estimated free bytes: 208, Actual free bytes: 208
+    Aging timer expires in: 1102 secs
+
+  Packet: LSP ID: DR2.02-00, Length: 76 bytes, Lifetime : 1108 secs
+    Checksum: 0x7762, Sequence: 0x5b, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    IS neighbor: DR2.00, Internal, Metric: default 0
+    IS neighbor: AR10.00, Internal, Metric: default 0
+    IS extended neighbor: DR2.00, Metric: default 0
+    IS extended neighbor: AR10.00, Metric: default 0
+  No queued transmissions
+
+DR2.03-00 Sequence: 0x40, Checksum: 0, Lifetime: 0 secs
+
+  Header: LSP ID: DR2.03-00, Length: 27 bytes
+    Allocated length: 284 bytes, Router ID: 0.0.0.0
+    Remaining lifetime: 0 secs, Level: 2, Interface: 331
+    Estimated free bytes: 208, Actual free bytes: 257
+    Garbage collection timer expires in: 245 secs
+
+  Packet: LSP ID: DR2.03-00, Length: 27 bytes, Lifetime : 0 secs
+    Checksum: 0, Sequence: 0x40, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+  No queued transmissions
+
+DR2.04-00 Sequence: 0x3d, Checksum: 0, Lifetime: 0 secs
+
+  Header: LSP ID: DR2.04-00, Length: 27 bytes
+    Allocated length: 284 bytes, Router ID: 0.0.0.0
+    Remaining lifetime: 0 secs, Level: 2, Interface: 331
+    Estimated free bytes: 208, Actual free bytes: 257
+    Garbage collection timer expires in: 259 secs
+
+  Packet: LSP ID: DR2.04-00, Length: 27 bytes, Lifetime : 0 secs
+    Checksum: 0, Sequence: 0x3d, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+  No queued transmissions
+
+DR2.05-00 Sequence: 0x42, Checksum: 0, Lifetime: 0 secs
+
+  Header: LSP ID: DR2.05-00, Length: 27 bytes
+    Allocated length: 284 bytes, Router ID: 0.0.0.0
+    Remaining lifetime: 0 secs, Level: 2, Interface: 332
+    Estimated free bytes: 257, Actual free bytes: 257
+    Garbage collection timer expires in: 1115 secs
+
+  Packet: LSP ID: DR2.05-00, Length: 27 bytes, Lifetime : 0 secs
+    Checksum: 0, Sequence: 0x42, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+  No queued transmissions
+
+ASW1.00-00 Sequence: 0x49, Checksum: 0x5629, Lifetime: 1104 secs
+   IS neighbor: AR2.02                        Metric:       10
+     Two-way fragment: AR2.02-00, Two-way first fragment: AR2.02-00
+   IS neighbor: AR2.03                        Metric:       10
+     Two-way fragment: AR2.03-00, Two-way first fragment: AR2.03-00
+   IP prefix: 10.10.20.1/32                   Metric:        0 Internal Up
+   IP prefix: 172.16.25.60/30                 Metric:       10 Internal Up
+   IP prefix: 172.16.25.68/30                 Metric:       10 Internal Up
+
+  Header: LSP ID: ASW1.00-00, Length: 207 bytes
+    Allocated length: 284 bytes, Router ID: 10.10.20.1
+    Remaining lifetime: 1104 secs, Level: 2, Interface: 330
+    Estimated free bytes: 77, Actual free bytes: 77
+    Aging timer expires in: 1104 secs
+    Protocols: IP, IPv6
+
+  Packet: LSP ID: ASW1.00-00, Length: 207 bytes, Lifetime : 1110 secs
+    Checksum: 0x5629, Sequence: 0x49, Attributes: 0x3 <L1 L2>
+    NLPID: 0x83, Fixed length: 27 bytes, Version: 1, Sysid length: 0 bytes
+    Packet type: 20, Packet version: 1, Max area: 0
+
+  TLVs:
+    Area address: 49.0002 (3)
+    LSP Buffer Size: 1492
+    Speaks: IP
+    Speaks: IPV6
+    IP router id: 10.10.20.1
+    IP address: 10.10.20.1
+    Hostname: ASW1
+    IP prefix: 10.10.20.1/32, Internal, Metric: default 0, Up
+    IP prefix: 172.16.25.68/30, Internal, Metric: default 10, Up
+    IP prefix: 172.16.25.60/30, Internal, Metric: default 10, Up
+    IP extended prefix: 10.10.20.1/32 metric 0 up
+    IP extended prefix: 172.16.25.68/30 metric 10 up
+    IP extended prefix: 172.16.25.60/30 metric 10 up
+    IS neighbor: AR2.03, Internal, Metric: default 10
+    IS neighbor: AR2.02, Internal, Metric: default 10
+    IS extended neighbor: AR2.03, Metric: default 10
+      IP address: 172.16.25.70
+      Local interface index: 330, Remote interface index: 0
+    IS extended neighbor: AR2.02, Metric: default 10
+      IP address: 172.16.25.62
+      Local interface index: 331, Remote interface index: 0
+  No queued transmissions
+
+[edit]
+lab@DR1# 
+

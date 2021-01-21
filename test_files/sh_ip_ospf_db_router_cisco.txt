@@ -1,0 +1,677 @@
+AR16#terminal length 0
+AR16#show ip ospf database router 
+
+            OSPF Router with ID (10.10.10.16) (Process ID 10)
+
+		Router Link States (Area 0)
+
+  LS age: 1884
+  Options: (No TOS-capability, DC)
+  LS Type: Router Links
+  Link State ID: 10.10.10.1
+  Advertising Router: 10.10.10.1
+  LS Seq Number: 80000003
+  Checksum: 0xBA30
+  Length: 84
+  Number of Links: 5
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.253
+     (Link Data) Router Interface address: 172.16.25.6
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.4
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.2
+     (Link Data) Router Interface address: 172.16.25.9
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.8
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 10.10.10.1
+     (Link Data) Network Mask: 255.255.255.255
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 0
+
+
+  LS age: 1828
+  Options: (No TOS-capability, DC)
+  LS Type: Router Links
+  Link State ID: 10.10.10.2
+  Advertising Router: 10.10.10.2
+  LS Seq Number: 80000008
+  Checksum: 0x4B07
+  Length: 108
+  Number of Links: 7
+
+    Link connected to: a Transit Network
+     (Link ID) Designated Router address: 172.16.25.69
+     (Link Data) Router Interface address: 172.16.25.69
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.1
+     (Link Data) Router Interface address: 172.16.25.10
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.8
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.3
+     (Link Data) Router Interface address: 172.16.25.13
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.12
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Transit Network
+     (Link ID) Designated Router address: 172.16.25.61
+     (Link Data) Router Interface address: 172.16.25.61
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 10.10.10.2
+     (Link Data) Network Mask: 255.255.255.255
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 0
+
+
+  LS age: 1720
+  Options: (No TOS-capability, DC)
+  LS Type: Router Links
+  Link State ID: 10.10.10.3
+  Advertising Router: 10.10.10.3
+  LS Seq Number: 80000003
+  Checksum: 0x6658
+  Length: 84
+  Number of Links: 5
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.4
+     (Link Data) Router Interface address: 172.16.25.17
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.16
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.2
+     (Link Data) Router Interface address: 172.16.25.14
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.12
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 10.10.10.3
+     (Link Data) Network Mask: 255.255.255.255
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 0
+
+
+  LS age: 1716
+  Options: (No TOS-capability, DC)
+  LS Type: Router Links
+  Link State ID: 10.10.10.4
+  Advertising Router: 10.10.10.4
+  LS Seq Number: 80000003
+  Checksum: 0x7732
+  Length: 84
+  Number of Links: 5
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.3
+     (Link Data) Router Interface address: 172.16.25.18
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.16
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.5
+     (Link Data) Router Interface address: 172.16.25.21
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.20
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 10.10.10.4
+     (Link Data) Network Mask: 255.255.255.255
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 0
+
+
+  LS age: 1439
+  Options: (No TOS-capability, DC)
+  LS Type: Router Links
+  Link State ID: 10.10.10.5
+  Advertising Router: 10.10.10.5
+  LS Seq Number: 80000003
+  Checksum: 0xE6B3
+  Length: 84
+  Number of Links: 5
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.4
+     (Link Data) Router Interface address: 172.16.25.22
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.20
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.254
+     (Link Data) Router Interface address: 172.16.25.26
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.24
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 10.10.10.5
+     (Link Data) Network Mask: 255.255.255.255
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 0
+
+
+  LS age: 1599
+  Options: (No TOS-capability, DC)
+  LS Type: Router Links
+  Link State ID: 10.10.10.6
+  Advertising Router: 10.10.10.6
+  LS Seq Number: 80000003
+  Checksum: 0x274
+  Length: 84
+  Number of Links: 5
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.7
+     (Link Data) Router Interface address: 172.16.25.33
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.32
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.253
+     (Link Data) Router Interface address: 172.16.25.30
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.28
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 10.10.10.6
+     (Link Data) Network Mask: 255.255.255.255
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 0
+
+
+  LS age: 1599
+  Options: (No TOS-capability, DC)
+  LS Type: Router Links
+  Link State ID: 10.10.10.7
+  Advertising Router: 10.10.10.7
+  LS Seq Number: 80000003
+  Checksum: 0x258
+  Length: 84
+  Number of Links: 5
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.6
+     (Link Data) Router Interface address: 172.16.25.34
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.32
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.8
+     (Link Data) Router Interface address: 172.16.25.37
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.36
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 10.10.10.7
+     (Link Data) Network Mask: 255.255.255.255
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 0
+
+
+  LS age: 1523
+  Options: (No TOS-capability, DC)
+  LS Type: Router Links
+  Link State ID: 10.10.10.8
+  Advertising Router: 10.10.10.8
+  LS Seq Number: 80000003
+  Checksum: 0x3A0B
+  Length: 84
+  Number of Links: 5
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.7
+     (Link Data) Router Interface address: 172.16.25.38
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.36
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.9
+     (Link Data) Router Interface address: 172.16.25.41
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.40
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 10.10.10.8
+     (Link Data) Network Mask: 255.255.255.255
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 0
+
+
+  LS age: 1406
+  Options: (No TOS-capability, DC)
+  LS Type: Router Links
+  Link State ID: 10.10.10.9
+  Advertising Router: 10.10.10.9
+  LS Seq Number: 80000006
+  Checksum: 0xB2C0
+  Length: 120
+  Number of Links: 8
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.11
+     (Link Data) Router Interface address: 172.16.25.57
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.56
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Transit Network
+     (Link ID) Designated Router address: 172.16.25.82
+     (Link Data) Router Interface address: 172.16.25.82
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.8
+     (Link Data) Router Interface address: 172.16.25.42
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.40
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.254
+     (Link Data) Router Interface address: 172.16.25.46
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.44
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 10.10.10.9
+     (Link Data) Network Mask: 255.255.255.255
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 0
+
+
+  LS age: 1369
+  Options: (No TOS-capability, DC)
+  LS Type: Router Links
+  Link State ID: 10.10.10.10
+  Advertising Router: 10.10.10.10
+  LS Seq Number: 80000007
+  Checksum: 0x4BE5
+  Length: 72
+  Number of Links: 4
+
+    Link connected to: a Transit Network
+     (Link ID) Designated Router address: 172.16.25.49
+     (Link Data) Router Interface address: 172.16.25.50
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Transit Network
+     (Link ID) Designated Router address: 172.16.25.65
+     (Link Data) Router Interface address: 172.16.25.65
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Transit Network
+     (Link ID) Designated Router address: 172.16.25.53
+     (Link Data) Router Interface address: 172.16.25.53
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 10.10.10.10
+     (Link Data) Network Mask: 255.255.255.255
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 0
+
+
+  LS age: 1408
+  Options: (No TOS-capability, DC)
+  LS Type: Router Links
+  Link State ID: 10.10.10.11
+  Advertising Router: 10.10.10.11
+  LS Seq Number: 80000003
+  Checksum: 0x5A97
+  Length: 72
+  Number of Links: 4
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.9
+     (Link Data) Router Interface address: 172.16.25.58
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.56
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Transit Network
+     (Link ID) Designated Router address: 172.16.25.82
+     (Link Data) Router Interface address: 172.16.25.83
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 10.10.10.11
+     (Link Data) Network Mask: 255.255.255.255
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 0
+
+
+  LS age: 780
+  Options: (No TOS-capability, DC)
+  LS Type: Router Links
+  Link State ID: 10.10.10.16
+  Advertising Router: 10.10.10.16
+  LS Seq Number: 80000004
+  Checksum: 0xB1D8
+  Length: 36
+  Number of Links: 1
+
+    Link connected to: a Transit Network
+     (Link ID) Designated Router address: 172.16.25.74
+     (Link Data) Router Interface address: 172.16.25.74
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 10
+
+
+  LS age: 1407
+  Options: (No TOS-capability, DC)
+  LS Type: Router Links
+  Link State ID: 10.10.10.253
+  Advertising Router: 10.10.10.253
+  LS Seq Number: 80000007
+  Checksum: 0x5B61
+  Length: 120
+  Number of Links: 8
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.1
+     (Link Data) Router Interface address: 172.16.25.5
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.4
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Transit Network
+     (Link ID) Designated Router address: 172.16.25.49
+     (Link Data) Router Interface address: 172.16.25.49
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.254
+     (Link Data) Router Interface address: 172.16.25.1
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.0
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.6
+     (Link Data) Router Interface address: 172.16.25.29
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.28
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 10.10.10.253
+     (Link Data) Network Mask: 255.255.255.255
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 0
+
+
+  LS age: 782
+  Options: (No TOS-capability, DC)
+  LS Type: Router Links
+  Link State ID: 10.10.10.254
+  Advertising Router: 10.10.10.254
+  LS Seq Number: 80000008
+  Checksum: 0xC5EB
+  Length: 144
+  Number of Links: 10
+
+    Link connected to: a Transit Network
+     (Link ID) Designated Router address: 172.16.25.74
+     (Link Data) Router Interface address: 172.16.25.73
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Transit Network
+     (Link ID) Designated Router address: 172.16.25.82
+     (Link Data) Router Interface address: 172.16.25.81
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.253
+     (Link Data) Router Interface address: 172.16.25.2
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.0
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.9
+     (Link Data) Router Interface address: 172.16.25.45
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.44
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Transit Network
+     (Link ID) Designated Router address: 172.16.25.53
+     (Link Data) Router Interface address: 172.16.25.54
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.10.10.5
+     (Link Data) Router Interface address: 172.16.25.25
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 172.16.25.24
+     (Link Data) Network Mask: 255.255.255.252
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 10.10.10.254
+     (Link Data) Network Mask: 255.255.255.255
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 0
+
+
+  LS age: 1829
+  Options: (No TOS-capability, DC)
+  LS Type: Router Links
+  Link State ID: 10.10.20.1
+  Advertising Router: 10.10.20.1
+  LS Seq Number: 80000003
+  Checksum: 0x49ED
+  Length: 60
+  Number of Links: 3
+
+    Link connected to: a Transit Network
+     (Link ID) Designated Router address: 172.16.25.69
+     (Link Data) Router Interface address: 172.16.25.70
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Transit Network
+     (Link ID) Designated Router address: 172.16.25.61
+     (Link Data) Router Interface address: 172.16.25.62
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 10.10.20.1
+     (Link Data) Network Mask: 255.255.255.255
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 0
+
+
+  LS age: 1363
+  Options: (No TOS-capability, DC)
+  LS Type: Router Links
+  Link State ID: 10.10.20.2
+  Advertising Router: 10.10.20.2
+  LS Seq Number: 80000002
+  Checksum: 0x3D37
+  Length: 48
+  Number of Links: 2
+
+    Link connected to: a Transit Network
+     (Link ID) Designated Router address: 172.16.25.65
+     (Link Data) Router Interface address: 172.16.25.66
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 10.10.20.2
+     (Link Data) Network Mask: 255.255.255.255
+      Number of MTID metrics: 0
+       TOS 0 Metrics: 0
+
+
+AR16#
+

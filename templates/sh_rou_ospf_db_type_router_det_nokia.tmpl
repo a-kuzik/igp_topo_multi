@@ -1,0 +1,14 @@
+Value Required,Filldown Area ((\d+\.){3}\d+)
+Value Required,Filldown RID ((\d+\.){3}\d+)
+Value Required,Filldown LSAType (\S+)
+Value LinkType ((\S+\s+)+)
+Value Nbr ((\d+\.){3}\d+)
+Value Mtrc (\d+)
+
+Start
+  ^Area\s+Id\s+:\s+${Area}.* -> Continue
+  ^Link\s+State\s+Id\s+:\s+${RID}.* -> Continue
+  ^LSA\s+Type\s+:\s+${LSAType} -> Continue
+  ^Link\s+Type.*:\s+${LinkType} -> Continue
+  ^((Nbr\s+Rtr\s+Id\s+\(\d+\))|(Network\s+\(\d+\))|(DR\s+Rtr\s+Id\s+\(\d+\)))\s+:\s+${Nbr}.* -> Continue
+  ^.*Metric-\d+.*\s+:\s+${Mtrc}.* -> Continue.Record

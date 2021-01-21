@@ -1,0 +1,16 @@
+Value Required,Filldown LSPID (\S+)
+Value Required,Filldown Level (\S+)
+Value Required,Filldown Area (\d+\.\d+)
+Value Required,Filldown RID ((\d+\.){3}\d+)
+Value Required Nbr (\S+)
+Value Mtrc (\d+)
+Value NbrIP ((\d+\.){3}\d+)
+
+
+Start
+  ^LSP\s+ID\s+:\s+${LSPID}-00\s+Level\s+:\s+${Level} -> Continue.Record
+  ^\s+Area\s+Address\s+:\s+\(\d+\)\s+${Area}.* -> Continue.Record
+  ^\s+Router\s+ID\s+:\s+${RID} -> Continue.Record
+  ^\s+Nbr\s+:\s+${Nbr} -> Continue
+  ^\s+Default\s+Metric\s+:\s+${Mtrc} -> Continue
+  ^\s+Nbr\s+IP\s+:\s+${NbrIP} -> Continue.Record

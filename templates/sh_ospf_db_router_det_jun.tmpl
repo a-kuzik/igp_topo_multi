@@ -1,0 +1,10 @@
+Value Required,Filldown LSA (\S+)
+Value Required,Filldown RID ((\d+\.){3}\d+)
+Value Type (\S+)
+Value Nbr ((\d+\.){3}\d+)
+Value Mtrc (\d+)
+
+Start
+  ^${LSA}\s+(\*)?${RID}.* -> Continue
+  ^\s+Type:\s+${Type},\s+Node\s+ID:\s+${Nbr} -> Continue
+  ^\s+Metric:\s+${Mtrc}.* -> Continue.Record

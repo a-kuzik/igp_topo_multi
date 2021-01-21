@@ -1,0 +1,11 @@
+Value Required,Filldown LSPID (\S+\.\d{2})
+Value Required,Filldown Area (\S+)
+Value Filldown RID ((\d+\.){3}\d+)
+Value Required Mtrc (\d+)
+Value Required Nbr (\S+)
+
+Start
+  ^${LSPID}-.* -> Continue.Record
+  ^\s+Area\s+Address:\s+${Area} -> Continue.Record
+  ^\s+Router\s+ID:\s+${RID} -> Continue.Record
+  ^\s+Metric:\s+${Mtrc}\s+IS\s+${Nbr} -> Continue.Record

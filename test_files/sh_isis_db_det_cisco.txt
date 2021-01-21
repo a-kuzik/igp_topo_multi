@@ -1,0 +1,341 @@
+AR16#sh isis database detail 
+
+IS-IS Level-1 Link State Database:
+LSPID                 LSP Seq Num  LSP Checksum  LSP Holdtime/Rcvd      ATT/P/OL
+AR16.00-00          * 0x00000003   0x02BD                 532/*         0/0/0
+  Area Address: 49.0002
+  NLPID:        0xCC 
+  Hostname: AR16
+  Metric: 10         IS AR16.01
+  IP Address:   10.10.10.16
+  Metric: 0          IP 10.10.10.16 255.255.255.255
+  Metric: 10         IP 172.16.25.72 255.255.255.252
+AR16.01-00          * 0x00000001   0xC1D0                 532/*         0/0/0
+  Metric: 0          IS AR16.00
+IS-IS Level-2 Link State Database:
+LSPID                 LSP Seq Num  LSP Checksum  LSP Holdtime/Rcvd      ATT/P/OL
+AR1.00-00             0x00000003   0x3C4B                 955/1194      0/0/0
+  Area Address: 49.0002
+  Code:   14  Length: 2
+  NLPID:        0xCC 0x8E 
+  Router ID:    10.10.10.1
+  IP Address:   10.10.10.1
+  Hostname: AR1
+  Metric: 10         IP 172.16.25.4 255.255.255.252
+  Metric: 10         IP 172.16.25.8 255.255.255.252
+  Metric: 0          IP 10.10.10.1 255.255.255.255
+  Metric: 10         IP 172.16.25.4/30
+  Metric: 10         IP 172.16.25.8/30
+  Metric: 0          IP 10.10.10.1/32
+  Metric: 10         IS AR2.00
+  Metric: 10         IS DR1.00
+  Metric: 10         IS-Extended AR2.00
+  Metric: 10         IS-Extended DR1.00
+AR2.00-00             0x0000000D   0x47E9                1058/1192      0/0/0
+  Area Address: 49.0002
+  Code:   14  Length: 2
+  NLPID:        0xCC 0x8E 
+  Router ID:    10.10.10.2
+  IP Address:   10.10.10.2
+  Hostname: AR2
+  Metric: 10         IP 172.16.25.68 255.255.255.252
+  Metric: 10         IP 172.16.25.8 255.255.255.252
+  Metric: 10         IP 172.16.25.12 255.255.255.252
+  Metric: 10         IP 172.16.25.60 255.255.255.252
+  Metric: 0          IP 10.10.10.2 255.255.255.255
+  Metric: 10         IP 172.16.25.68/30
+  Metric: 10         IP 172.16.25.8/30
+  Metric: 10         IP 172.16.25.12/30
+  Metric: 10         IP 172.16.25.60/30
+  Metric: 0          IP 10.10.10.2/32
+  Metric: 10         IS ASW1.02
+  Metric: 10         IS AR3.00
+  Metric: 10         IS AR1.00
+  Metric: 10         IS ASW1.03
+  Metric: 10         IS-Extended ASW1.02
+  Metric: 10         IS-Extended AR3.00
+  Metric: 10         IS-Extended AR1.00
+  Metric: 10         IS-Extended ASW1.03
+AR3.00-00             0x00000003   0xB923                 989/1192      0/0/0
+  Area Address: 49.0002
+  Code:   14  Length: 2
+  NLPID:        0xCC 0x8E 
+  Router ID:    10.10.10.3
+  IP Address:   10.10.10.3
+  Hostname: AR3
+  Metric: 10         IP 172.16.25.16 255.255.255.252
+  Metric: 10         IP 172.16.25.12 255.255.255.252
+  Metric: 0          IP 10.10.10.3 255.255.255.255
+  Metric: 10         IP 172.16.25.16/30
+  Metric: 10         IP 172.16.25.12/30
+  Metric: 0          IP 10.10.10.3/32
+  Metric: 10         IS AR2.00
+  Metric: 10         IS AR4.00
+  Metric: 10         IS-Extended AR2.00
+  Metric: 10         IS-Extended AR4.00
+AR4.00-00             0x00000003   0xD3E0                 989/1194      0/0/0
+  Area Address: 49.0002
+  Code:   14  Length: 2
+  NLPID:        0xCC 0x8E 
+  Router ID:    10.10.10.4
+  IP Address:   10.10.10.4
+  Hostname: AR4
+  Metric: 10         IP 172.16.25.16 255.255.255.252
+  Metric: 10         IP 172.16.25.20 255.255.255.252
+  Metric: 0          IP 10.10.10.4 255.255.255.255
+  Metric: 10         IP 172.16.25.16/30
+  Metric: 10         IP 172.16.25.20/30
+  Metric: 0          IP 10.10.10.4/32
+  Metric: 10         IS AR5.00
+  Metric: 10         IS AR3.00
+  Metric: 10         IS-Extended AR5.00
+  Metric: 10         IS-Extended AR3.00
+AR5.00-00             0x00000003   0x9B48                 963/1196      0/0/0
+  Area Address: 49.0002
+  Code:   14  Length: 2
+  NLPID:        0xCC 0x8E 
+  Router ID:    10.10.10.5
+  IP Address:   10.10.10.5
+  Hostname: AR5
+  Metric: 10         IP 172.16.25.20 255.255.255.252
+  Metric: 10         IP 172.16.25.24 255.255.255.252
+  Metric: 0          IP 10.10.10.5 255.255.255.255
+  Metric: 10         IP 172.16.25.20/30
+  Metric: 10         IP 172.16.25.24/30
+  Metric: 0          IP 10.10.10.5/32
+  Metric: 10         IS DR2.00
+  Metric: 10         IS AR4.00
+  Metric: 10         IS-Extended DR2.00
+  Metric: 10         IS-Extended AR4.00
+AR6.00-00             0x00000003   0x7725                 858/1194      0/0/0
+  Area Address: 49.0002
+  Code:   14  Length: 2
+  NLPID:        0xCC 0x8E 
+  Router ID:    10.10.10.6
+  IP Address:   10.10.10.6
+  Hostname: AR6
+  Metric: 10         IP 172.16.25.32 255.255.255.252
+  Metric: 10         IP 172.16.25.28 255.255.255.252
+  Metric: 0          IP 10.10.10.6 255.255.255.255
+  Metric: 10         IP 172.16.25.32/30
+  Metric: 10         IP 172.16.25.28/30
+  Metric: 0          IP 10.10.10.6/32
+  Metric: 10         IS DR1.00
+  Metric: 10         IS AR7.00
+  Metric: 10         IS-Extended DR1.00
+  Metric: 10         IS-Extended AR7.00
+AR7.00-00             0x00000003   0xEB2A                1006/1192      0/0/0
+  Area Address: 49.0002
+  Code:   14  Length: 2
+  NLPID:        0xCC 0x8E 
+  Router ID:    10.10.10.7
+  IP Address:   10.10.10.7
+  Hostname: AR7
+  Metric: 10         IP 172.16.25.32 255.255.255.252
+  Metric: 10         IP 172.16.25.36 255.255.255.252
+  Metric: 0          IP 10.10.10.7 255.255.255.255
+  Metric: 10         IP 172.16.25.32/30
+  Metric: 10         IP 172.16.25.36/30
+  Metric: 0          IP 10.10.10.7/32
+  Metric: 10         IS AR6.00
+  Metric: 10         IS AR8.00
+  Metric: 10         IS-Extended AR6.00
+  Metric: 10         IS-Extended AR8.00
+AR8.00-00             0x00000004   0xBF28                1033/1194      0/0/0
+  Area Address: 49.0002
+  Code:   14  Length: 2
+  NLPID:        0xCC 0x8E 
+  Router ID:    10.10.10.8
+  IP Address:   10.10.10.8
+  Hostname: AR8
+  Metric: 0          IP 10.10.10.8 255.255.255.255
+  Metric: 10         IP 172.16.25.36 255.255.255.252
+  Metric: 10         IP 172.16.25.40 255.255.255.252
+  Metric: 0          IP 10.10.10.8/32
+  Metric: 10         IP 172.16.25.36/30
+  Metric: 10         IP 172.16.25.40/30
+  Metric: 10         IS AR7.00
+  Metric: 10         IS AR9.00
+  Metric: 10         IS-Extended AR7.00
+  Metric: 10         IS-Extended AR9.00
+AR9.00-00             0x00000005   0x6616                1033/1196      0/0/0
+  Area Address: 49.0002
+  Code:   14  Length: 2
+  NLPID:        0xCC 0x8E 
+  Router ID:    10.10.10.9
+  IP Address:   10.10.10.9
+  Hostname: AR9
+  Metric: 10         IP 172.16.25.56 255.255.255.252
+  Metric: 10         IP 172.16.25.80 255.255.255.248
+  Metric: 10         IP 172.16.25.40 255.255.255.252
+  Metric: 10         IP 172.16.25.44 255.255.255.252
+  Metric: 0          IP 10.10.10.9 255.255.255.255
+  Metric: 10         IP 172.16.25.56/30
+  Metric: 10         IP 172.16.25.80/29
+  Metric: 10         IP 172.16.25.40/30
+  Metric: 10         IP 172.16.25.44/30
+  Metric: 0          IP 10.10.10.9/32
+  Metric: 10         IS DR2.03
+  Metric: 10         IS DR2.00
+  Metric: 10         IS AR11.02
+  Metric: 10         IS AR8.00
+  Metric: 10         IS-Extended DR2.03
+  Metric: 10         IS-Extended DR2.00
+  Metric: 10         IS-Extended AR11.02
+  Metric: 10         IS-Extended AR8.00
+AR10.00-00            0x00000005   0xED09                 773/1196      0/0/0
+  Area Address: 49.0002
+  Code:   14  Length: 2
+  NLPID:        0xCC 0x8E 
+  Router ID:    10.10.10.10
+  IP Address:   10.10.10.10
+  Hostname: AR10
+  Metric: 10         IP 172.16.25.48 255.255.255.252
+  Metric: 10         IP 172.16.25.64 255.255.255.252
+  Metric: 10         IP 172.16.25.52 255.255.255.252
+  Metric: 0          IP 10.10.10.10 255.255.255.255
+  Metric: 10         IP 172.16.25.48/30
+  Metric: 10         IP 172.16.25.64/30
+  Metric: 10         IP 172.16.25.52/30
+  Metric: 0          IP 10.10.10.10/32
+  Metric: 10         IS DR2.02
+  Metric: 10         IS DR1.02
+  Metric: 10         IS-Extended DR2.02
+  Metric: 10         IS-Extended DR1.02
+AR11.00-00            0x00000003   0x2DD5                 926/1196      0/0/0
+  Area Address: 49.0002
+  Code:   14  Length: 2
+  NLPID:        0xCC 0x8E 
+  Router ID:    10.10.10.11
+  IP Address:   10.10.10.11
+  Hostname: AR11
+  Metric: 10         IP 172.16.25.56 255.255.255.252
+  Metric: 10         IP 172.16.25.80 255.255.255.248
+  Metric: 0          IP 10.10.10.11 255.255.255.255
+  Metric: 10         IP 172.16.25.56/30
+  Metric: 10         IP 172.16.25.80/29
+  Metric: 0          IP 10.10.10.11/32
+  Metric: 10         IS DR2.03
+  Metric: 10         IS AR11.02
+  Metric: 10         IS-Extended DR2.03
+  Metric: 10         IS-Extended AR11.02
+AR11.02-00            0x00000001   0x739E                 926/1196      0/0/0
+  Metric: 0          IS AR11.00
+  Metric: 0          IS AR9.00
+  Metric: 0          IS-Extended AR11.00
+  Metric: 0          IS-Extended AR9.00
+AR16.00-00          * 0x00000003   0x02BD                 574/*         0/0/0
+  Area Address: 49.0002
+  NLPID:        0xCC 
+  Hostname: AR16
+  Metric: 10         IS AR16.01
+  IP Address:   10.10.10.16
+  Metric: 0          IP 10.10.10.16 255.255.255.255
+  Metric: 10         IP 172.16.25.72 255.255.255.252
+AR16.01-00          * 0x00000001   0x64C1                 574/*         0/0/0
+  Metric: 0          IS AR16.00
+  Metric: 0          IS DR2.00
+DR1.00-00             0x00000006   0x66C1                 954/1196      0/0/0
+  Area Address: 49.0002
+  Code:   14  Length: 2
+  NLPID:        0xCC 0x8E 
+  Router ID:    10.10.10.253
+  IP Address:   10.10.10.253
+  Hostname: DR1
+  Metric: 10         IP 172.16.25.4 255.255.255.252
+  Metric: 10         IP 172.16.25.48 255.255.255.252
+  Metric: 10         IP 172.16.25.0 255.255.255.252
+  Metric: 10         IP 172.16.25.28 255.255.255.252
+  Metric: 0          IP 10.10.10.253 255.255.255.255
+  Metric: 10         IP 172.16.25.4/30
+  Metric: 10         IP 172.16.25.48/30
+  Metric: 10         IP 172.16.25.0/30
+  Metric: 10         IP 172.16.25.28/30
+  Metric: 0          IP 10.10.10.253/32
+  Metric: 10         IS DR2.00
+  Metric: 10         IS DR1.02
+  Metric: 10         IS AR6.00
+  Metric: 10         IS AR1.00
+  Metric: 10         IS-Extended DR2.00
+  Metric: 10         IS-Extended DR1.02
+  Metric: 10         IS-Extended AR6.00
+  Metric: 10         IS-Extended AR1.00
+DR1.02-00             0x00000003   0xFF35                 773/1196      0/0/0
+  Metric: 0          IS DR1.00
+  Metric: 0          IS AR10.00
+  Metric: 0          IS-Extended DR1.00
+  Metric: 0          IS-Extended AR10.00
+DR2.00-00             0x00000007   0x6130                 926/1198      0/0/0
+  Area Address: 49.0002
+  Code:   14  Length: 2
+  NLPID:        0xCC 0x8E 
+  Router ID:    10.10.10.254
+  IP Address:   10.10.10.254
+  Hostname: DR2
+  Metric: 10         IP 172.16.25.72 255.255.255.252
+  Metric: 10         IP 172.16.25.80 255.255.255.248
+  Metric: 10         IP 172.16.25.0 255.255.255.252
+  Metric: 10         IP 172.16.25.44 255.255.255.252
+  Metric: 10         IP 172.16.25.52 255.255.255.252
+  Metric: 10         IP 172.16.25.24 255.255.255.252
+  Metric: 0          IP 10.10.10.254 255.255.255.255
+  Metric: 10         IP 172.16.25.72/30
+  Metric: 10         IP 172.16.25.80/29
+  Metric: 10         IP 172.16.25.0/30
+  Metric: 10         IP 172.16.25.44/30
+  Metric: 10         IP 172.16.25.52/30
+  Metric: 10         IP 172.16.25.24/30
+  Metric: 0          IP 10.10.10.254/32
+  Metric: 10         IS DR1.00
+  Metric: 10         IS AR16.01
+  Metric: 10         IS DR2.02
+  Metric: 10         IS DR2.03
+  Metric: 10         IS AR5.00
+  Metric: 10         IS AR9.00
+  Metric: 10         IS-Extended DR1.00
+  Metric: 10         IS-Extended AR16.01
+  Metric: 10         IS-Extended DR2.02
+  Metric: 10         IS-Extended DR2.03
+  Metric: 10         IS-Extended AR5.00
+  Metric: 10         IS-Extended AR9.00
+DR2.02-00             0x00000001   0x2C08                 602/1198      0/0/0
+  Metric: 0          IS DR2.00
+  Metric: 0          IS AR10.00
+  Metric: 0          IS-Extended DR2.00
+  Metric: 0          IS-Extended AR10.00
+DR2.03-00             0x00000002   0x431F                 895/1198      0/0/0
+  Metric: 0          IS DR2.00
+  Metric: 0          IS AR11.00
+  Metric: 0          IS AR9.00
+  Metric: 0          IS-Extended DR2.00
+  Metric: 0          IS-Extended AR11.00
+  Metric: 0          IS-Extended AR9.00
+ASW1.00-00            0x0000000B   0xD8E4                1058/1190      0/0/0
+  Area Address: 49.0002
+  Code:   14  Length: 2
+  NLPID:        0xCC 0x8E 
+  Router ID:    10.10.20.1
+  IP Address:   10.10.20.1
+  Hostname: ASW1
+  Metric: 10         IP 172.16.25.68 255.255.255.252
+  Metric: 10         IP 172.16.25.60 255.255.255.252
+  Metric: 0          IP 10.10.20.1 255.255.255.255
+  Metric: 10         IP 172.16.25.68/30
+  Metric: 10         IP 172.16.25.60/30
+  Metric: 0          IP 10.10.20.1/32
+  Metric: 10         IS ASW1.02
+  Metric: 10         IS ASW1.03
+  Metric: 10         IS-Extended ASW1.02
+  Metric: 10         IS-Extended ASW1.03
+ASW1.02-00            0x00000001   0x2726                 964/951       0/0/0
+  Metric: 0          IS ASW1.00
+  Metric: 0          IS AR2.00
+  Metric: 0          IS-Extended ASW1.00
+  Metric: 0          IS-Extended AR2.00
+ASW1.03-00            0x00000005   0x1830                1052/1190      0/0/0
+  Metric: 0          IS ASW1.00
+  Metric: 0          IS AR2.00
+  Metric: 0          IS-Extended ASW1.00
+  Metric: 0          IS-Extended AR2.00
+AR16#                  
+

@@ -1,0 +1,291 @@
+lab@DR1# run show ospf database router detail | no-more 
+
+    OSPF database, Area 0.0.0.0
+ Type       ID               Adv Rtr           Seq      Age  Opt  Cksum  Len 
+Router   10.10.10.1       10.10.10.1       0x80000004  1082  0x22 0xb831  84
+  bits 0x0, link count 5
+  id 10.10.10.253, data 172.16.25.6, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.4, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.2, data 172.16.25.9, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.8, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.1, data 255.255.255.255, Type Stub (3)
+    Topology count: 0, Default metric: 0
+  Topology default (ID 0)
+    Type: PointToPoint, Node ID: 10.10.10.2
+      Metric: 1, Bidirectional
+    Type: PointToPoint, Node ID: 10.10.10.253
+      Metric: 1, Bidirectional
+Router   10.10.10.2       10.10.10.2       0x8000000c  1091  0x22 0x93b8 108
+  bits 0x0, link count 7
+  id 172.16.25.70, data 172.16.25.69, Type Transit (2)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.1, data 172.16.25.10, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.8, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.3, data 172.16.25.13, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.12, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.62, data 172.16.25.61, Type Transit (2)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.2, data 255.255.255.255, Type Stub (3)
+    Topology count: 0, Default metric: 0
+  Topology default (ID 0)
+    Type: Transit, Node ID: 172.16.25.62
+      Metric: 1, Bidirectional
+    Type: PointToPoint, Node ID: 10.10.10.3
+      Metric: 1, Bidirectional
+    Type: PointToPoint, Node ID: 10.10.10.1
+      Metric: 1, Bidirectional
+    Type: Transit, Node ID: 172.16.25.70
+      Metric: 1, Bidirectional
+Router   10.10.10.3       10.10.10.3       0x80000008   378  0x22 0x5c5d  84
+  bits 0x0, link count 5
+  id 10.10.10.4, data 172.16.25.17, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.16, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.2, data 172.16.25.14, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.12, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.3, data 255.255.255.255, Type Stub (3)
+    Topology count: 0, Default metric: 0
+  Topology default (ID 0)
+    Type: PointToPoint, Node ID: 10.10.10.2
+      Metric: 1, Bidirectional
+    Type: PointToPoint, Node ID: 10.10.10.4
+      Metric: 1, Bidirectional
+Router   10.10.10.4       10.10.10.4       0x80000005   914  0x22 0x7334  84
+  bits 0x0, link count 5
+  id 10.10.10.3, data 172.16.25.18, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.16, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.5, data 172.16.25.21, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.20, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.4, data 255.255.255.255, Type Stub (3)
+    Topology count: 0, Default metric: 0
+  Topology default (ID 0)
+    Type: PointToPoint, Node ID: 10.10.10.5
+      Metric: 1, Bidirectional
+    Type: PointToPoint, Node ID: 10.10.10.3
+      Metric: 1, Bidirectional
+Router   10.10.10.5       10.10.10.5       0x80000009  1964  0x22 0xdab9  84
+  bits 0x0, link count 5
+  id 10.10.10.4, data 172.16.25.22, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.20, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.254, data 172.16.25.26, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.24, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.5, data 255.255.255.255, Type Stub (3)
+    Topology count: 0, Default metric: 0
+  Topology default (ID 0)
+    Type: PointToPoint, Node ID: 10.10.10.254
+      Metric: 1, Bidirectional
+    Type: PointToPoint, Node ID: 10.10.10.4
+      Metric: 1, Bidirectional
+Router   10.10.10.6       10.10.10.6       0x80000003  1178  0x22 0x274   84
+  bits 0x0, link count 5
+  id 10.10.10.7, data 172.16.25.33, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.32, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.253, data 172.16.25.30, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.28, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.6, data 255.255.255.255, Type Stub (3)
+    Topology count: 0, Default metric: 0
+  Topology default (ID 0)
+    Type: PointToPoint, Node ID: 10.10.10.253
+      Metric: 1, Bidirectional
+    Type: PointToPoint, Node ID: 10.10.10.7
+      Metric: 1, Bidirectional
+Router   10.10.10.7       10.10.10.7       0x80000004  1182  0x22 0xff59  84
+  bits 0x0, link count 5
+  id 10.10.10.6, data 172.16.25.34, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.32, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.8, data 172.16.25.37, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.36, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.7, data 255.255.255.255, Type Stub (3)
+    Topology count: 0, Default metric: 0
+  Topology default (ID 0)
+    Type: PointToPoint, Node ID: 10.10.10.8
+      Metric: 1, Bidirectional
+    Type: PointToPoint, Node ID: 10.10.10.6
+      Metric: 1, Bidirectional
+Router   10.10.10.8       10.10.10.8       0x80000006  1975  0x22 0x340e  84
+  bits 0x0, link count 5
+  id 10.10.10.7, data 172.16.25.38, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.36, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.9, data 172.16.25.41, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.40, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.8, data 255.255.255.255, Type Stub (3)
+    Topology count: 0, Default metric: 0
+  Topology default (ID 0)
+    Type: PointToPoint, Node ID: 10.10.10.9
+      Metric: 1, Bidirectional
+    Type: PointToPoint, Node ID: 10.10.10.7
+      Metric: 1, Bidirectional
+Router   10.10.10.9       10.10.10.9       0x80000013    42  0x22 0x76f0 120
+  bits 0x0, link count 8
+  id 10.10.10.11, data 172.16.25.57, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.56, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.81, data 172.16.25.82, Type Transit (2)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.8, data 172.16.25.42, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.40, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.254, data 172.16.25.46, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.44, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.9, data 255.255.255.255, Type Stub (3)
+    Topology count: 0, Default metric: 0
+  Topology default (ID 0)
+    Type: PointToPoint, Node ID: 10.10.10.254
+      Metric: 1, Bidirectional
+    Type: PointToPoint, Node ID: 10.10.10.8
+      Metric: 1, Bidirectional
+    Type: Transit, Node ID: 172.16.25.81
+      Metric: 1, Bidirectional
+    Type: PointToPoint, Node ID: 10.10.10.11
+      Metric: 1, Bidirectional
+Router   10.10.10.10      10.10.10.10      0x8000000f  1965  0x22 0x51d6  72
+  bits 0x0, link count 4
+  id 172.16.25.49, data 172.16.25.50, Type Transit (2)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.66, data 172.16.25.65, Type Transit (2)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.53, data 172.16.25.53, Type Transit (2)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.10, data 255.255.255.255, Type Stub (3)
+    Topology count: 0, Default metric: 0
+  Topology default (ID 0)
+    Type: Transit, Node ID: 172.16.25.53
+      Metric: 1, Bidirectional
+    Type: Transit, Node ID: 172.16.25.66
+      Metric: 1, Bidirectional
+    Type: Transit, Node ID: 172.16.25.49
+      Metric: 1, Bidirectional
+Router   10.10.10.11      10.10.10.11      0x8000000e    36  0x22 0x22c5  72
+  bits 0x0, link count 4
+  id 10.10.10.9, data 172.16.25.58, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.56, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.81, data 172.16.25.83, Type Transit (2)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.11, data 255.255.255.255, Type Stub (3)
+    Topology count: 0, Default metric: 0
+  Topology default (ID 0)
+    Type: Transit, Node ID: 172.16.25.81
+      Metric: 1, Bidirectional
+    Type: PointToPoint, Node ID: 10.10.10.9
+      Metric: 1, Bidirectional
+Router  *10.10.10.253     10.10.10.253     0x80000009  1186  0x22 0x5763 120
+  bits 0x0, link count 8
+  id 10.10.10.1, data 172.16.25.5, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.4, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.49, data 172.16.25.49, Type Transit (2)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.254, data 172.16.25.1, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.0, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.6, data 172.16.25.29, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.28, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.253, data 255.255.255.255, Type Stub (3)
+    Topology count: 0, Default metric: 0
+  Topology default (ID 0)
+    Type: PointToPoint, Node ID: 10.10.10.6
+      Metric: 1, Bidirectional
+    Type: PointToPoint, Node ID: 10.10.10.254
+      Metric: 1, Bidirectional
+    Type: Transit, Node ID: 172.16.25.49
+      Metric: 1, Bidirectional
+    Type: PointToPoint, Node ID: 10.10.10.1
+      Metric: 1, Bidirectional
+Router   10.10.10.254     10.10.10.254     0x80000014    36  0x22 0x54a1 132
+  bits 0x0, link count 9
+  id 172.16.25.81, data 172.16.25.81, Type Transit (2)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.253, data 172.16.25.2, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.0, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.9, data 172.16.25.45, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.44, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.53, data 172.16.25.54, Type Transit (2)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.5, data 172.16.25.25, Type PointToPoint (1)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.24, data 255.255.255.252, Type Stub (3)
+    Topology count: 0, Default metric: 1
+  id 10.10.10.254, data 255.255.255.255, Type Stub (3)
+    Topology count: 0, Default metric: 0
+  Topology default (ID 0)
+    Type: PointToPoint, Node ID: 10.10.10.5
+      Metric: 1, Bidirectional
+    Type: Transit, Node ID: 172.16.25.53
+      Metric: 1, Bidirectional
+    Type: PointToPoint, Node ID: 10.10.10.9
+      Metric: 1, Bidirectional
+    Type: PointToPoint, Node ID: 10.10.10.253
+      Metric: 1, Bidirectional
+    Type: Transit, Node ID: 172.16.25.81
+      Metric: 1, Bidirectional
+Router   10.10.20.1       10.10.20.1       0x80000008  2026  0x22 0x5fd0  60
+  bits 0x0, link count 3
+  id 172.16.25.70, data 172.16.25.70, Type Transit (2)
+    Topology count: 0, Default metric: 1
+  id 172.16.25.62, data 172.16.25.62, Type Transit (2)
+    Topology count: 0, Default metric: 1
+  id 10.10.20.1, data 255.255.255.255, Type Stub (3)
+    Topology count: 0, Default metric: 0
+  Topology default (ID 0)
+    Type: Transit, Node ID: 172.16.25.62
+      Metric: 1, Bidirectional
+    Type: Transit, Node ID: 172.16.25.70
+      Metric: 1, Bidirectional
+Router   10.10.20.2       10.10.20.2       0x8000000b  1301  0x22 0x3535  48
+  bits 0x0, link count 2
+  id 172.16.25.66, data 172.16.25.66, Type Transit (2)
+    Topology count: 0, Default metric: 1
+  id 10.10.20.2, data 255.255.255.255, Type Stub (3)
+    Topology count: 0, Default metric: 0
+  Topology default (ID 0)
+    Type: Transit, Node ID: 172.16.25.66
+      Metric: 1, Bidirectional
+
+[edit]
+lab@DR1# 
+

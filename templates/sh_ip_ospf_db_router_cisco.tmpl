@@ -1,0 +1,12 @@
+Value Required,Filldown Area (\S+)
+Value Required,Filldown RID ((\d+\.){3}\d+)
+Value Required LinkType ((point-to-point)|(Transit)|(Stub))
+Value Nbr ((\d+\.){3}\d+)
+Value Mtrc (\d+)
+
+Start
+  ^.*\(Area\s+${Area}\) -> Continue.Record
+  ^\s+Advertising\s+Router:\s+${RID} -> Continue.Record
+  ^\s+Link\s+connected\s+to:.*${LinkType} -> Continue
+  ^\s+\(Link\s+ID\).*:\s+${Nbr} -> Continue
+  ^.*Metrics:\s+${Mtrc} -> Continue.Record

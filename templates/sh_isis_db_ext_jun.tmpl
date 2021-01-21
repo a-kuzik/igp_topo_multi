@@ -1,0 +1,13 @@
+Value Filldown LSPID (\S+\.\d{2})
+Value Filldown Area (\S+)
+Value Filldown RID ((\d+\.){3}\d+)
+Value Required,Filldown Hostname (\S+)
+Value Required Nbr (\S+)
+Value Required Metric (\d+)
+
+Start
+  ^${LSPID}-\d+\s+Sequence:.* -> Continue.Record
+  ^\s+Area\s+address:\s+${Area}.* -> Continue.Record
+  ^\s+IP\s+router\s+id:\s+${RID} -> Continue.Record
+  ^\s+Hostname:\s+${Hostname} -> Continue.Record
+  ^\s+IS\s+neighbor:\s+${Nbr},.*\s+Metric:\s+\S+\s+${Metric} -> Continue.Record
