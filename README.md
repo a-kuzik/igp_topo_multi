@@ -11,9 +11,10 @@ This small project contains Python script and templates for parsing IGP LSDB (OS
 
 Using this script is very easy.
 
-1) Please load a file with LSDB in directory ```/test_files```. Currently contains the few tests files.
-2) In the file config.yaml specify the path and name to your LSDB file, vendor name, where did you get the LSDB file, and type of IGP (OPSF or ISIS).
-3) Runnig the script  ```igp_topo_light.py``` and enjoy your network topology in a browser.
+1. Please load a file with LSDB in directory ```/test_files```. Currently contains the few tests files.
+2. In the file config.yaml specify the path and name to your LSDB file, vendor name, where did you get the LSDB file, and type of IGP (OPSF or ISIS).
+3. Install requirements from ```requirements.txt```.
+4. Runnig the script  ```igp_topo_light.py``` and enjoy your network topology in a browser.
 
 Currently supported:
 
