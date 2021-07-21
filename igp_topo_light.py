@@ -23,6 +23,7 @@ tmpl5 = "templates/disp_isis_lsdb_verbose_huawei.tmpl"
 tmpl6 = "templates/sh_rou_ospf_db_type_router_det_nokia.tmpl"
 tmpl7 = "templates/sh_rou_isis_db_det_nokia.tmpl"
 tmpl8 = "templates/sh_ip_ospf_db_router_cisco.tmpl"
+tmpl9 = "templates/disp_ospf_lsdb_router_huawei.tmpl"
 
 pw_nodes = []
 hostnames = []
@@ -270,6 +271,36 @@ if host_type == "huawei":
         links = list23
         # Creating lists of hosts and pseudo nodes
         hosts, pw_nodes = hosts_pwnodes(list23)
+
+    ##Creating topology from OSPF LSDB
+    if igp == "ospf":
+        out7 = parse_textfsm(tmpl9, lsdb)
+        list26 = []
+        list27 = []
+        for L76 in out7:
+            if L76[1] not in hosts:
+                hosts.append(L76[1])
+            if "P-2-P" in L76[4]:
+                list26.append((L76[1], L76[2]))
+            if "TransNet" in L76[4]:
+                list27.append((L76[1], L76[2]))
+                if L76[2] == L76[3]:
+                    if L76[3] not in pw_nodes:
+                        pw_nodes.append(L76[2])
+        # Removing doubles from links for P2P and BMA types of connections
+        for L77 in list26:
+            for L78 in list26:
+                if L77[0] == L78[1]:
+                    if L77[1] == L78[0]:
+                        list26.remove(L78)
+        for L79 in list27:
+            for L80 in list27:
+                if L79[0] == L80[1]:
+                    if L79[1] == L80[0]:
+                        list27.remove(L80)
+        for L81 in list27:
+            list26.append(L81)
+            links = list26
 
 ###Create json file for NeXUI
 topologyData = {}

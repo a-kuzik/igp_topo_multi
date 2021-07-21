@@ -1,0 +1,14 @@
+Value Filldown LsId ((\d+\.){3}\d+)
+Value Filldown AdvRtr ((\d+\.){3}\d+)
+Value Required LinkId ((\d+\.){3}\d+)
+Value Required Data ((\d+\.){3}\d+)
+Value Required LType (\S+)
+Value Required Metric (\d+)
+
+Start
+  ^\s+Ls\s+id\s+\:\s+${LsId}
+  ^\s+Adv\s+rtr\s+\:\s+${AdvRtr}
+  ^\s+Link\s+ID:\s+${LinkId} 
+  ^\s+Data\s+\:\s+${Data}
+  ^\s+Link\s+Type\:\s+${LType}
+  ^\s+Metric\s+\:\s+${Metric} -> Record

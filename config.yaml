@@ -1,16 +1,16 @@
 ###############################################################
 ###Please specify here host's vendor and type of IGP
 ###############################################################
-host_type: juniper
+host_type: huawei
 igp: ospf
 
 ###############################################################
 ####Please specify here path to your file with LSDB information
 ###############################################################
-lsdb_file: test_files/sh_ospf_router_det_jun.txt
+#lsdb_file: test_files/sh_ospf_router_det_jun.txt
 #lsdb_file: test_files/sh_isis_db_ext_jun.txt
 #lsdb_file: test_files/sh_isis_db_det_cisco.txt
 #lsdb_file: test_files/sh_ip_ospf_db_router_cisco.txt
 #lsdb_file: test_files/sh_router_isis_db_det_nokia.txt
-
+lsdb_file: test_files/displ_ospf_lsdb_router_huawei.txt
 
