@@ -21,7 +21,7 @@ Currently supported:
 - Nokia - OSPF and ISIS;
 - Juniper - OSPF and ISIS;
 - Cisco - OSPF and ISIS;
-- Huawei - ISIS.
+- Huawei - OSPF and ISIS.
 
 Following commands outputs are possible for parsing:
 
@@ -46,3 +46,4 @@ Cisco:
 Huawei:
 
 ```display isis lsdb verbose```
+```display ospf lsdb router```
