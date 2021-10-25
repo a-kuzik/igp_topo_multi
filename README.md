@@ -50,4 +50,4 @@ Huawei:
 ```display ospf lsdb router```
 
 
-***If you clone, don't forget to leave a star :-) ***
+**If you clone, don't forget to leave a star :-)**
